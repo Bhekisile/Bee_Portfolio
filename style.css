@@ -16,6 +16,8 @@ body {
   position: absolute;
   background-image: url(./ImageP1/mobile-background.png);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav {
@@ -33,11 +35,11 @@ body {
   align-items: flex-end;
 }
 
-header {
+.myheader {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 52px;
   text-align: center;
   margin-top: 63.2px;
@@ -58,7 +60,7 @@ header {
   padding-top: 0;
 }
 
-h3 {
+h1 {
   margin-top: 0;
 }
 

@@ -9,8 +9,11 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Install](#install)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -44,10 +47,21 @@
 
 To get a local copy up and running, follow these steps.
 
+### Prerequisites
+
+In order to run this project you need:
 
 ### Setup
 
-Clone or fork this repository to your desired folder.
+Clone or fork this repository to your desired folder:
+
+-git clone https://github.com/Bhekisile/Bee_Portfolio.git
+
+ ### Install
+
+Install this project with:
+
+-npm install
 
 <!-- AUTHORS -->
 
@@ -58,7 +72,13 @@ Clone or fork this repository to your desired folder.
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 
+<!-- FUTURE FEATURES -->
 
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[Javascript]**
 
 <!-- CONTRIBUTING -->
 
@@ -83,7 +103,6 @@ If you like this project hit like.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank Microverse (the whole team) for giving me this opportunity.
 
