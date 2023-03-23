@@ -97,3 +97,22 @@ p {
   width: 20px;
   height: 19.58px;
 }
+
+/*Cards*/
+
+.card1 img {
+  width: 327px;
+  height: 252px;
+}
+
+h2 .work {
+  width: 327px;
+  height: 97px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 52px;
+  text-align: center;
+  color: #172B4D;
+}
