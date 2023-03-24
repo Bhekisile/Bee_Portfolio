@@ -5,7 +5,6 @@ body {
 .container {
   width: 381px;
   height: 6351px;
-  /*border: 1px solid black;*/
   padding-bottom: 123px;
   margin-bottom: 59px;
 }
@@ -88,7 +87,6 @@ p {
   margin-left: 105px;
   margin-right: 105px;
   padding-left: 0;
- /* border: 1px solid black;*/
   margin-bottom: 0;
 }
 
@@ -105,13 +103,11 @@ p {
 .chevron {
   width: 327px;
   height: 48px;
-  /*border: 1px solid black;*/
   margin-left: 27px;
   margin-top: 609px;
-  /*margin-bottom: 59px;*/
 }
 
-/*Cards*/
+/* Cards */
 
 .cards {
   display: grid;
@@ -128,8 +124,7 @@ header .work {
   font-size: 30px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
- /* border: 1px solid black;*/
+  color: #172b4d;
   margin-left: 26px;
   margin-right: 28px;
   margin-top: 63px;
@@ -147,20 +142,18 @@ header .work {
 .card-img {
   width: 327px;
   height: 252px;
-  /*border: 1px solid black;*/
   margin-left: 0;
   margin-top: 0;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
 }
 
 .card {
   width: 327px;
   height: 474px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 8px;
   margin-left: 26px;
   margin-right: 28px;
-  /*margin-bottom: 24px;*/
 }
 
 .wrapper {
@@ -178,7 +171,7 @@ h3 {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color:#3A4A42;
+  color: #3a4a42;
 }
 
 .languages ul {
@@ -192,14 +185,14 @@ h3 {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  color:#3A4A42;
+  color: #3a4a42;
   padding: 0;
   margin-bottom: 29px;
 }
 
-li {
+.languages li {
   box-sizing: border-box;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   padding: 8px 12px;
   border-radius: 4px;
 }
@@ -227,7 +220,7 @@ li {
 .btn {
   width: 122px;
   height: 48px;
-  background-color:#36B37F;
+  background-color: #36b37f;
   border-radius: 4px;
   color: #fff;
   font-family: "Inter", sans-serif;
@@ -249,7 +242,6 @@ li {
   background-image: url(./ImageP1/background-left.png);
   background-repeat: no-repeat;
   background-position: bottom left;
-  
 }
 
 .resume h2 {
@@ -261,9 +253,7 @@ li {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
-  border: 1px solid bla;
-  
+  color: #172b4d;
 }
 
 .resume .btn {
@@ -276,8 +266,8 @@ li {
 .card-works {
   width: 327px;
   height: 316px;
-  border: 1px solid #C1C7D0;
-  background-color: #EBF0EE;
+  border: 1px solid #c1c7d0;
+  background-color: #ebf0ee;
   border-radius: 8px;
   margin-left: 24px;
   margin-top: 59px;
@@ -296,7 +286,7 @@ h4 {
   height: 32px;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight:600;
+  font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
@@ -325,7 +315,7 @@ h4 {
 .resume-cards li {
   box-sizing: border-box;
   background-color: #fff;
-  color: #36B37E;
+  color: #36b37e;
   padding: 12px;
   border-radius: 8px;
 }
@@ -401,11 +391,11 @@ h4 {
 }
 
 .btn:hover {
-  background-color: #36B37F;
+  background-color: #36b37f;
 }
 
 .btn:enabled {
-  background-color: #36B37F;
+  background-color: #36b37f;
 }
 
 .btn:focus {
