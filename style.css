@@ -436,7 +436,7 @@ input {
   font-size: 15px;
   line-height: 24px;
   align-items: center;
-  color: #6B778C;
+  color: #6b778c;
   border: none;
 }
 
@@ -449,7 +449,7 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   align-items: center;
-  color: #42526E;
+  color: #42526e;
   margin: 12px;
   border: none;
 }
@@ -457,7 +457,7 @@ textarea {
 .input-text {
   width: 327px;
   height: 48px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
   box-sizing: border-box;
   margin-bottom: 24px;
@@ -467,7 +467,7 @@ textarea {
 .text-area {
   width: 327px;
   height: 114px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   border-radius: 4px;
   box-sizing: border-box;
   margin-bottom: 24px;
@@ -488,7 +488,7 @@ textarea {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #42526E;
+  color: #42526e;
   margin-left: 0;
   margin-top: 0;
 }
