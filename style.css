@@ -427,4 +427,16 @@ h4 {
   list-style: none;
 }
 
+input {
+  width: 295px;
+  height: 18px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
+  color: #6B778C;
+  border: none;
+}
 
