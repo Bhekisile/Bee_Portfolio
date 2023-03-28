@@ -80,6 +80,7 @@ p {
 
 .flex-icons ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-content: flex-start;
   list-style: none;
@@ -401,3 +402,6 @@ h4 {
 .btn:focus {
   background-color: #008552;
 }
+
+/* form */
+
