@@ -4,8 +4,8 @@ body {
 
 .container {
   width: 381px;
-  height: 6351px;
-  padding-bottom: 123px;
+  height: 6301px;
+  padding-bottom: 118px;
   margin-bottom: 59px;
 }
 
@@ -142,7 +142,7 @@ header .work {
 
 .card-img {
   width: 327px;
-  height: 252px;
+  height: 238px;
   margin-left: 0;
   margin-top: 0;
   background-color: #ebf0ee;
@@ -150,7 +150,7 @@ header .work {
 
 .card {
   width: 327px;
-  height: 474px;
+  height: 460px;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   margin-left: 26px;
@@ -266,7 +266,7 @@ h3 {
 
 .card-works {
   width: 327px;
-  height: 316px;
+  height: 310px;
   border: 1px solid #c1c7d0;
   background-color: #ebf0ee;
   border-radius: 8px;
@@ -278,7 +278,7 @@ h3 {
 }
 
 .card-works img {
-  margin-top: 40px;
+  margin-top: 38px;
   margin-bottom: 0;
 }
 
@@ -414,7 +414,7 @@ h4 {
   text-align: center;
   color: #172b4d;
   margin-top: 54px;
-  margin-bottom: 58px;
+  margin-bottom: 48px;
 }
 
 .user-form ul {
@@ -462,4 +462,60 @@ textarea {
   box-sizing: border-box;
   margin-bottom: 24px;
   padding: 15px 16px 15px 16px;
+}
+
+.text-area {
+  width: 327px;
+  height: 114px;
+  border: 1px solid #60C095;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.button {
+  width: 129px;
+  height: 48px;
+  margin-bottom: 30px;
+}
+
+.email {
+  width: 381px;
+  height: 38px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.two {
+  margin-bottom: 20.08px;
+}
+
+.nav-icons {
+  height: 131px;
+  width: 381px;
+}
+
+form {
+  background-image: url(./ImageP1/illustration-contact-form.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid #36b37f;
+}
+
+.img-bar {
+  justify-content: center;
 }
