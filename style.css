@@ -403,5 +403,18 @@ h4 {
   background-color: #008552;
 }
 
-/* form */
+.user-form > p {
+  width: 327px;
+  height: 363px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin-top: 54px;
+  margin-bottom: 58px;
+}
+
 
