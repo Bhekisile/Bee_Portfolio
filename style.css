@@ -440,3 +440,26 @@ input {
   border: none;
 }
 
+textarea {
+  width: 303px;
+  height: 90px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
+  color: #42526E;
+  margin: 12px;
+  border: none;
+}
+
+.input-text {
+  width: 327px;
+  height: 48px;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  padding: 15px 16px 15px 16px;
+}
