@@ -417,4 +417,14 @@ h4 {
   margin-bottom: 58px;
 }
 
+.user-form ul {
+  list-style: none;
+}
+
+.user-form > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
 
