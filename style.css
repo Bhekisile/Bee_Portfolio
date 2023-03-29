@@ -392,14 +392,6 @@ h4 {
 }
 
 .btn:hover {
-  background-color: #36b37f;
-}
-
-.btn:enabled {
-  background-color: #36b37f;
-}
-
-.btn:focus {
   background-color: #008552;
 }
 
@@ -506,10 +498,6 @@ form {
   background-image: url(./ImageP1/illustration-contact-form.png);
   background-repeat: no-repeat;
   background-position: bottom right;
-}
-
-input:invalid {
-  border: 2px dashed red;
 }
 
 input:valid {
