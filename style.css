@@ -392,6 +392,10 @@ h4 {
 }
 
 .btn:hover {
+  background-color: #36b37f;
+}
+
+.btn:active {
   background-color: #008552;
 }
 
@@ -506,4 +510,8 @@ input:valid {
 
 .img-bar {
   justify-content: center;
+}
+
+@media screen (max-width: 768px) {
+
 }
