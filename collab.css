@@ -1,0 +1,9 @@
+ul {
+  list-style-type: none;
+}
+
+.links li {
+  float: left;
+  width: 5%;
+  color: #6070ff;
+}
