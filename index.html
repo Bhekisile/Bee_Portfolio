@@ -12,40 +12,52 @@
 
 <body>
     <section class="container">
-        <nav class="nav">
-            <img src="./ImageP1/hamburger.png" alt="hamburger">
-        </nav>
-        <section class="background">
-            <header class="myheader">
-                <h1> <span class="blue">Hey there. <br>
-                        I’m Alex. <br></span>
-                    <span class="green"> I’m a software <br>
-                        developer</span>
-                </h1>
+        <div class="background-container">
+            <header>
+                <nav class="nav">
+                    <img src="./ImageP1/hamburger.png" alt="hamburger">
+                </nav>
+                <nav class="desk">
+                    <ul>
+                        <li>Portfolio</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
             </header>
-            <article>
-                <p>I can help you build a product , feature or website Look through some of my work and experience! If
-                    you like what you see and have a project you need coded, <br>
-                    don’t hesitate to contact me.</p>
-            </article>
-            <div class="flex-icons">
-                <ul>
-                    <li><a href="#"><img src="./ImageP1/twitter@.png" alt="Twitter-icon"></a></li>
-                    <li><a href="#"><img src="./ImageP1/Linkedin.png" alt="Linkedin-icon"></a></li>
-                    <li><a href="#"><img src="./ImageP1/medium.png" alt="Medium-icon"></a></li>
-                    <li><a href="https://github.com/Bhekisile/Bee_Portfolio"><img src="./ImageP1/github@.png"
-                                alt="Github-icon"></a></li>
-                    <li><a href="#"><img src="./ImageP1/angellist@.png" alt="Angellist-icon"></a></li>
-                </ul>
-            </div>
-        </section>
-        <div class="chevron">
-            <img src="./ImageP1/chevron1.png" alt="Chevron">
+        
+                <section class="background">
+            
+                    <header class="myheader">
+                        <h1> <span class="blue">Hey there. <br class="break">
+                                I’m Alex. <br></span>
+                            <span class="green"> I’m a software <br class="break">
+                                developer</span>
+                        </h1>
+                    </header>
+                    <article>
+                        <p>I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience! If
+                            you like what you see and have a project you need coded, <br>
+                            don’t hesitate to contact me.</p>
+                    </article>
+                    <div class="flex-icons">
+                        <ul>
+                            <li class="twitter"><a href="#"><img src="./ImageP1/twitter@.png" alt="Twitter-icon"></a></li>
+                            <li><a href="#"><img src="./ImageP1/Linkedin.png" alt="Linkedin-icon"></a></li>
+                            <li><a href="#"><img src="./ImageP1/medium.png" alt="Medium-icon"></a></li>
+                            <li><a href="https://github.com/Bhekisile/Bee_Portfolio"><img src="./ImageP1/github@.png"
+                                        alt="Github-icon"></a></li>
+                            <li><a href="#"><img src="./ImageP1/angellist@.png" alt="Angellist-icon"></a></li>
+                        </ul>
+                    </div>
+                    <div class="chevron">
+                        <img src="./ImageP1/chevron1.png" alt="Chevron">
+                    </div>
+                </section>
         </div>
-
         <section class="works">
             <header>
-                <h2 class="work">My Recent <br> Works</h2>
+                <h2 class="work">My Recent <br class="break"> Works</h2>
             </header>
             <div class="indicator">
                 <img src="./ImageP1/Indicator.png" alt="Indicator">
@@ -161,58 +173,61 @@
             <article class="resume">
                 <div class="side-background">
                     <h2>About me</h2>
-                    <p> I can help you build a product , feature or website Look through some of my work and experience!
+                    <p> I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience!
                         If you like what you see and have a project you need coded, <br>
                         don’t hesitate to contact me.</p>
                     <button class="btn" type="button">Get my resume</button>
                 </div>
             </article>
-            <article class="card-works">
-                <figure>
-                    <img src="./ImageP1/ellipse.png" alt="Ellipse icon">
-                </figure>
-                <div>
-                    <h4>Languages</h4>
-                </div>
-                <div class="resume-cards">
-                    <ul>
-                        <li class="jvs">JavaScript</li>
-                        <li class="ruby1">Ruby</li>
-                        <li class="html1">HTML</li>
-                        <li class="css1">CSS</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="card-works">
-                <figure>
-                    <img src="./ImageP1/icon-frameworks.png" alt="icon-frameworks">
-                </figure>
-                <h4>Frameworks</h4>
-                <div class="resume-cards">
-                    <ul>
-                        <li class="r-js">React.js</li>
-                        <li class="ruby-or">Ruby on Rails</li>
-                        <li class="rspec">RSpec</li>
-                        <li class="capy">Capybara</li>
-                        <li class="sele">Selenium</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="card-works">
-                <figure>
-                    <img src="./ImageP1/icon-skills.png" alt="icon-skills">
-                </figure>
-                <h4>Skills</h4>
-                <div class="resume-cards">
-                    <ul>
-                        <li class="dm">Database Management</li>
-                        <li class="version-c">Version Control</li>
-                        <li class="cli">CLI</li>
-                        <li class="web-d">Web Development</li>
-                        <li class="api-d">API Design</li>
-                    </ul>
-                </div>
-            </article>
+            <div class="grid">
+                <article class="card-works">
+                    <figure>
+                        <img src="./ImageP1/ellipse1.png" alt="Ellipse icon">
+                    </figure>
+                    <div>
+                        <h4>Languages</h4>
+                    </div>
+                    <div class="resume-cards">
+                        <ul>
+                            <li class="jvs">JavaScript</li>
+                            <li class="ruby1">Ruby</li>
+                            <li class="html1">HTML</li>
+                            <li class="css1">CSS</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="card-works">
+                    <figure>
+                        <img src="./ImageP1/icon-frameworks1.png" alt="icon-frameworks">
+                    </figure>
+                    <h4>Frameworks</h4>
+                    <div class="resume-cards">
+                        <ul>
+                            <li class="r-js">React.js</li>
+                            <li class="ruby-or">Ruby on Rails</li>
+                            <li class="rspec">RSpec</li>
+                            <li class="capy">Capybara</li>
+                            <li class="sele">Selenium</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="card-works">
+                    <figure>
+                        <img src="./ImageP1/icon-skills1.png" alt="icon-skills">
+                    </figure>
+                    <h4>Skills</h4>
+                    <div class="resume-cards">
+                        <ul>
+                            <li class="dm">Database Management</li>
+                            <li class="version-c">Version Control</li>
+                            <li class="cli">CLI</li>
+                            <li class="web-d">Web Development</li>
+                            <li class="api-d">API Design</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            
         </section>
         <section class="user-form">
             <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
@@ -244,7 +259,7 @@
                     </div>
             </div>
         </section>
-    </section>>
+    </section>
 </body>
 
 </html>
