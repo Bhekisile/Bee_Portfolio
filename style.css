@@ -524,8 +524,13 @@ input:valid {
   .container {
     width: 100%;
     height: 3074px;
-    border: 1px solid green;
-    /*padding-top: 0;*/
+  }
+
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
   .nav img {
@@ -547,7 +552,7 @@ input:valid {
     margin-bottom: 20px;
     align-items: center;
     gap: 10px;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -560,14 +565,12 @@ input:valid {
     background-image: none;
   }
 
-   .background-container {
-    /*width: 100%;*/
+  .background-container {
     height: 100vh;
-    /*position: absolute;*/
-    background-image: url(./ImageP1/Header-llustration-desktop.png);
+    width: 100%;
+    background-image: url(./ImageP1/Header-llustration-desktop-1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center;
     margin-top: -75px;
     margin-left: 27px;
     margin-bottom: 122px;
@@ -586,8 +589,9 @@ input:valid {
   p {
     width: 70%;
     height: fit-content;
-    font-size: 20px;
+    font-size: 18px;
     margin: 24px auto;
+    margin-top: 0;
   }
 
   .desktop {
@@ -598,7 +602,7 @@ input:valid {
     width: 200px;
     height: 40px;
     margin: 0 auto;
-    margin-bottom: 74px;
+    margin-bottom: 45px;
     padding-left: 0;
   }
 
@@ -608,18 +612,19 @@ input:valid {
 
   .chevron {
     margin: 0 auto;
+    margin-top: 0;
     margin-bottom: 495px;
   }
 
   .works {
     margin-top: 0;
-}   
+  }
 
   header .work {
-    border: 1px solid red;
     width: 447px;
     height: 48px;
-    margin: 0 auto;
+    margin-left: 497px;
+    margin-right: 496px;
     margin-bottom: 52px;
   }
 
@@ -631,13 +636,12 @@ input:valid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0;
-    margin-left: 134px;
-    margin-right: 134px;
-    padding: 0;
-    width: 85%;
+    margin-left: 135px;
+    padding-right: 0;
+    width: 84%;
     height: 966px;
-    border: 2px solid black;
     margin-bottom: 160px;
   }
 
@@ -655,7 +659,6 @@ input:valid {
     width: 447px;
     height: 48px;
     margin: 0 auto;
-    border: 1px solid red;
   }
 
   .resume p {
@@ -663,36 +666,31 @@ input:valid {
   }
 
   .side-background {
-    background-image: url(./ImageP1/desk-right-background.png);
-    background-position: -97.92% 20%;
-    background-size: auto;
-    /*width: 269.55px;
-    height: 244.78px;*/
+    background-image: url(./ImageP1/desk-right-background-resized.png);
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
   }
 
   .resume {
-  background-image: url(./ImageP1/bottom-left-desk-background.png);
-  /*background-repeat: no-repeat;*/
-  background-position-x: -53px;
-  background-position-y: 50px;
-}
+    background-image: url(./ImageP1/bottom-left-desk-background-resized.png);
+    background-position-y: 50%;
+  }
 
   .grid {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 12px;
     height: 355px;
-    width: 85%;
-    margin: 0 auto;
+    width: 78%;
     padding: 0;
-    margin-left: 134px;
-    border: 1px solid black;
+    margin-left: 136px;
   }
 
   .card-works {
     margin-top: 0;
-    margin-left: 0;
+    margin-right: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .user-form {
@@ -703,29 +701,63 @@ input:valid {
   .user-form > p {
     width: 463px;
     height: 256px;
-    margin-left: 135px;
+    margin-left: 154px;
     font-size: 30px;
     display: flex;
     align-items: center;
-    border: 1px solid black;
   }
 
   form {
-    width: 684px;
-    height: 330px;
-    border: 1px solid black;
+    width: 100%;
+    height: 450px;
     margin-top: 40px;
     margin-left: 0;
+    padding-right: 12px;
+    background-image: url(./ImageP1/bottom-right-background-resized.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
   }
 
-  form ul {
+  .input-text {
+    width: 82%;
+    height: 48px;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .text-area {
+    width: 82%;
+    height: 114px;
+    text-align: left;
+  }
+
+  .button {
     padding-left: 0;
+    margin-right: 460px;
   }
 
-  form .button {
-    padding-left: 0;
+  .two {
+    width: 200px;
+    height: 40px;
+    margin-left: 620px;
+    margin-bottom: 0;
   }
 
+  .nav-icons {
+    background-image: url(./ImageP1/bottom-background-resized.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bottom-background {
+    width: 100%;
+    padding-top: 166px;
+    background-image: url(./ImageP1/bottom-left-background-resized.png);
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+  }
+
+  .line {
+    margin-bottom: 15px;
+  }
 }
-
-  
