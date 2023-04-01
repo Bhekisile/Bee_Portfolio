@@ -283,7 +283,13 @@ h3 {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  font-size: 60px;
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
 }
+
+
 
 .resume .btn {
   width: 153px;
