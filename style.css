@@ -288,8 +288,8 @@ h3 {
   transition-delay: 2s;
 }
 
-.resume h2{
-  font-size: 60px;
+.resume h2:hover {
+  font-size: 80px;
 }
 
 .resume .btn {
