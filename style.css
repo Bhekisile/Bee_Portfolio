@@ -2,6 +2,29 @@ body {
   text-align: center;
 }
 
+.container::-webkit-scrollbar {
+  width: 0 !important;
+  background: transparent;
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+  background: transparent;
+  }
+  
+  @-moz-document url-prefix() {
+  .container {
+  scrollbar-width: none;
+  scrollbar-color: transparent;
+  }
+  }
+  
+
+html,
+body {
+  /*overflow-x: hidden;*/
+  max-width: 100%;
+}
+
 .container {
   width: 100%;
   height: 6301px;
@@ -37,6 +60,10 @@ body {
 }
 
 .desk {
+  display: none;
+}
+
+.desktop {
   display: none;
 }
 
@@ -241,7 +268,7 @@ h3 {
 }
 
 .resume {
-  width: 100%;
+  width: 351px;
   height: 338px;
   background-image: url(./ImageP1/background-left.png);
   background-repeat: no-repeat;
@@ -249,7 +276,7 @@ h3 {
 }
 
 .resume h2 {
-  width: 100%;
+  width: 351px;
   height: 48px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -272,7 +299,7 @@ h3 {
 }
 
 .card-works {
-  width: 327px;
+  width: 338px;
   height: 280px;
   border: 1px solid #c1c7d0;
   background-color: #ebf0ee;
@@ -308,8 +335,8 @@ h4 {
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-  width: 278px;
-  height: 40px;
+  width: 285px;
+  height: 44px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -375,12 +402,12 @@ h4 {
 }
 
 .dm {
-  width: 158px;
+  width: 159px;
   height: 40px;
 }
 
 .version-c {
-  width: 112px;
+  width: 115px;
   height: 40px;
 }
 
@@ -523,7 +550,10 @@ input:valid {
 @media (min-width: 768px) {
   .container {
     width: 100%;
-    height: 3074px;
+    height: 3274px;
+    background-image: url(./ImageP1/bottom-left-desk-background-resized.png);
+    background-position-y: 68%;
+    background-repeat: no-repeat;
   }
 
   body {
@@ -531,6 +561,10 @@ input:valid {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-image: url(./ImageP1/bottom-right-background-resized.png), url(./ImageP1/bottom-left-background-resized.png), url(./ImageP1/bottom-background-resized.png), url(./ImageP1/desk-right-background-resized.png);
+    background-repeat: no-repeat;
+    background-position-y: 98%, 97%, 95%, 62%;
+    background-position-x: 100%, 0%, 25%;
   }
 
   .nav img {
@@ -540,40 +574,67 @@ input:valid {
   .desk {
     display: block;
     margin-top: 0;
+    height: 72px;
+    width: 100%;
   }
 
   .desk ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    width: 97%;
-    height: 72px;
-    margin-top: -10px;
-    margin-bottom: 20px;
+    width: 20%;
+    height: 40px;
     align-items: center;
     gap: 10px;
+    padding-left: 0;
+    margin-left: 510px;
+    margin-right: 510px;
+    margin-top: 0;
+  }
+
+  .desk li {
+    flex: 1;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
-  }
+    color: #344563;
+    height: 20px;
+    }
+    
+  .port {
+    width: 63px;
+    height: 20px;
+    margin-left: 0;
+    }
+    
+  .about {
+    width: 45px;
+    }
+    
+  .contact {
+    width: 59%;
+    }
 
   .background {
-    width: 97%;
+    width: 100%;
     height: 344px;
     background-image: none;
   }
 
   .background-container {
-    height: 100vh;
-    width: 100%;
+    height: 650px;
     background-image: url(./ImageP1/Header-llustration-desktop-1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-top: -75px;
+    margin-top: -62.55px;
     margin-left: 27px;
     margin-bottom: 122px;
+  }
+
+  .desktop {
+    display: block;
   }
 
   .myheader {
@@ -592,10 +653,6 @@ input:valid {
     font-size: 18px;
     margin: 24px auto;
     margin-top: 0;
-  }
-
-  .desktop {
-    display: block;
   }
 
   .flex-icons ul {
@@ -618,13 +675,17 @@ input:valid {
 
   .works {
     margin-top: 0;
+    width: 80%;
+    height: 1080px;
+    margin-left: 135px;
+    margin-right: 134px;
   }
 
   header .work {
-    width: 447px;
+    width: 100%;
     height: 48px;
-    margin-left: 497px;
-    margin-right: 496px;
+    font-size: 40px;
+    text-align: center;
     margin-bottom: 52px;
   }
 
@@ -633,36 +694,56 @@ input:valid {
   }
 
   .cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0;
-    margin-left: 135px;
-    padding-right: 0;
-    width: 84%;
-    height: 966px;
-    margin-bottom: 160px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 0;
+    height: 988px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 80%;
   }
 
   .card {
-    flex: 1;
+    max-width: 329px;
+    height: 474px;
     margin-left: 0;
-    max-width: 327px;
   }
 
   .card-img {
     max-width: auto;
   }
 
+  .about-me {
+    height: 739px;
+    width: 97%;
+    margin-top: 112px;
+    margin-left: 15px;
+    margin-right: 13px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    margin-bottom: 17.5px;
+  }
+
+  .resume {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 69.5px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-image: none;
+  }
+
   .resume h2 {
-    width: 447px;
+    width: 50%;
     height: 48px;
+    font-size: 40px;
     margin: 0 auto;
   }
 
   .resume p {
-    width: fit-content;
+    width: 80%;
+    margin-top: 24px;
   }
 
   .side-background {
@@ -671,93 +752,124 @@ input:valid {
     background-position: 100% 20%;
   }
 
-  .resume {
-    background-image: url(./ImageP1/bottom-left-desk-background-resized.png);
-    background-position-y: 50%;
-  }
-
   .grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 12px;
+    column-gap: 24px;
     height: 355px;
-    width: 78%;
+    width: 100%;
     padding: 0;
-    margin-left: 136px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .card-works {
+    width: 100%;
+    height: 350px;
     margin-top: 0;
     margin-right: 0;
+    margin-left: 0;
     padding-right: 0;
     padding-left: 0;
   }
 
   .user-form {
-    display: grid;
-    grid-template-columns: auto auto;
+    width: 94%;
+    height: 490px;
+    margin-top: 900px;
+    margin-left: 143px;
+    margin-right: 141px;
+    margin-bottom: 230px;
   }
 
-  .user-form > p {
-    width: 463px;
+  .flex-container {
+    display: flex;
+    width: 100%;
+  }
+    
+  .flex-container p {
+    width: 40%;
     height: 256px;
-    margin-left: 154px;
-    font-size: 30px;
+    margin-left: 0;
     display: flex;
     align-items: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    margin-top: 0;
   }
 
   form {
     width: 100%;
-    height: 450px;
-    margin-top: 40px;
+    margin-top: 80;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: none;
+  }
+
+  .flex-container form {
+    width: 60%;
+    height: 330px;
+    padding: 0;
+  }
+    
+  .item1 ul {
+    align-items: flex-start;
+    width: 574px;
+    padding-left: 24px;
+    margin-top: 0;
+  }
+    
+  input {
     margin-left: 0;
-    padding-right: 12px;
-    background-image: url(./ImageP1/bottom-right-background-resized.png);
-    background-repeat: no-repeat;
-    background-position-y: bottom;
   }
 
   .input-text {
-    width: 82%;
+    width: 100%;
     height: 48px;
-    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
     text-align: left;
   }
 
   .text-area {
-    width: 82%;
+    width: 100%;
     height: 114px;
+    margin-right: 0;
     text-align: left;
   }
 
   .button {
-    padding-left: 0;
-    margin-right: 460px;
-  }
-
-  .two {
-    width: 200px;
-    height: 40px;
-    margin-left: 620px;
-    margin-bottom: 0;
-  }
-
-  .nav-icons {
-    background-image: url(./ImageP1/bottom-background-resized.png);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-  }
-
-  .bottom-background {
-    width: 100%;
-    padding-top: 166px;
-    background-image: url(./ImageP1/bottom-left-background-resized.png);
-    background-repeat: no-repeat;
-    background-position-y: 100%;
+    margin-left: 24px;
+    width: 129px;
+    height: 48px;
   }
 
   .line {
+    margin-top: 28px;
     margin-bottom: 15px;
+    margin-left: -170px;
+    width: 1440px;
+    padding-top: 206px;
+    height: 1px;
+  }
+
+  .two {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    margin-left: -200px;
+    margin-right: 0;
+    width: 1440px;
+    height: 30px;
+  }
+
+  .two ul {
+    margin-top: 40px;
   }
 }

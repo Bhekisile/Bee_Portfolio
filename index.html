@@ -172,13 +172,11 @@
             </main>
             <section class="about-me">
                 <article class="resume">
-                    <div class="side-background">
                         <h2>About me</h2>
                         <p> I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience!
                             If you like what you see and have a project you need coded, <br>
                             don’t hesitate to contact me.</p>
                         <button class="btn" type="button">Get my resume</button>
-                    </div>
                 </article>
                 <div class="grid">
                     <article class="card-works">
@@ -232,39 +230,44 @@
             
         </section>
         <section class="user-form">
-            
+            <div class="flex-container">
                 <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
             
-            <form action="https://formspree.io/f/mpznvgqj" method="post">
-                <ul>
-                    <li class="input-text"><input type="text" id="full-name" name="full-name" placeholder="Full name"
-                            maxlength="30" required></li>
-                            <li class="input-text"><input type="email" id="email-address" name="email-address" placeholder="Email address" required></li>
-                    <li class="text-area"><textarea type="textarea" id="comment" name="comment"
-                            placeholder="Hey I'd like to connect to..." maxlength="500" required></textarea></li>
-                </ul>
-                <button type="submit" class="btn button">Get in touch</button>
-            </form>
-
+                    <form action="https://formspree.io/f/mpznvgqj" method="post">
+                        <div class="flex item1">
+                            <ul>
+                                <li class="input-text"><input type="text" id="full-name" name="full-name" placeholder="Full name"
+                                        maxlength="30" required></li>
+                                <li class="input-text"><input type="email" id="email-address" name="email-address" placeholder="Email address" required></li>
+                                <li class="text-area"><textarea type="textarea" id="comment" name="comment"
+                                        placeholder="Hey I'd like to connect to..." maxlength="500" required></textarea></li>
+                            </ul>
+                        </div>
+                        <div class="flex item2">
+                            <button type="submit" class="btn button">Get in touch</button>
+                        </div>
+                    </form>
+            </div>
             <div class="nav-icons">
                 <div class="bottom-background line r-bg">
                     <img src="./ImageP1/line.png" alt="Line">
                 </div>
                 <p class="email break">myemailhere@email.com</p>
-                <div class="flex-icons two">
-                    <ul>
-                        <li><a href="#"><img src="./ImageP1/twitter@.png" alt="Twitter-icon"></a></li>
-                        <li><a href="#"><img src="./ImageP1/Linkedin.png" alt="Linkedin-icon"></a></li>
-                        <li><a href="#"><img src="./ImageP1/medium.png" alt="Medium-icon"></a></li>
-                        <li><a href="https://github.com/Bhekisile/Bee_Portfolio"><img src="./ImageP1/github@.png"
-                                    alt="Github-icon"></a></li>
-                        <li><a href="#"><img src="./ImageP1/angellist@.png" alt="Angellist-icon"></a></li>
-                    </ul>
-                    
-                </div>
+                <nav class="social-links">
+                    <div class="flex-icons two">
+                        <ul>
+                            <li><a href="#"><img src="./ImageP1/twitter@.png" alt="Twitter-icon"></a></li>
+                            <li><a href="#"><img src="./ImageP1/Linkedin.png" alt="Linkedin-icon"></a></li>
+                            <li><a href="#"><img src="./ImageP1/medium.png" alt="Medium-icon"></a></li>
+                            <li><a href="https://github.com/Bhekisile/Bee_Portfolio"><img src="./ImageP1/github@.png"
+                                        alt="Github-icon"></a></li>
+                            <li><a href="#"><img src="./ImageP1/angellist@.png" alt="Angellist-icon"></a></li>
+                        </ul>
+                    </div>
                     <div class="bar">
                         <img class="img-bar break" src="./ImageP1/bottom-bar.png" alt="bottom-bar">
                     </div>
+                </nav>
             </div>
             
         </section>
