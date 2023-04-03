@@ -48,7 +48,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://bhekisile.github.io/Bee_Portfolio/)
 
 <!-- GETTING STARTED -->
 
