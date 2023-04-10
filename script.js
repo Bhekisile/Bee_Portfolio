@@ -10,8 +10,8 @@ function clickX() {
   ham.style.display = 'block';
 }
 
-let getHam = document.querySelector('.getHam');
+const getHam = document.querySelector('.getHam');
 getHam.addEventListener('click', clickMenu);
 
-let x = document.querySelector('#x');
+const x = document.querySelector('#x');
 x.addEventListener('click', clickX);
