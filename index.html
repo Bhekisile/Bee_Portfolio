@@ -12,10 +12,19 @@
 
 <body>
     <section class="container-bg">
+        <div id="ham-menu">
+            <img onclick="clickX()" id="x" src="https://img.icons8.com/material-outlined/24/null/delete-sign.png"/>
+            <ul>
+              <li><a href="#portfolio" class="clr-grey">Portfolio</a></li>
+              <li><a href="#about" class="clr-grey">About</a></li>
+              <li><a href="#contact" class="clr-grey">Contact</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="background-container">
             <header>
                 <nav class="nav">
-                    <img src="./ImageP1/hamburger.png" alt="hamburger">
+                    <img src="./ImageP1/hamburger.png" alt="hamburger" onclick="clickMenu()">
                 </nav>
                 <nav class="desk">
                     <ul>
@@ -36,7 +45,7 @@
                         </h1>
                     </header>
                     <article>
-                        <p>I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience! If
+                        <p class="double">I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience! If
                             you like what you see and have a project you need coded, <br>
                             don’t hesitate to contact me.</p>
                     </article>
@@ -174,7 +183,7 @@
                 <article class="resume">
                 
                         <h2>About me</h2>
-                        <p> I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience!
+                        <p class="double"> I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience!
                             If you like what you see and have a project you need coded, <br>
                             don’t hesitate to contact me.</p>
                         <button class="btn" type="button">Get my resume</button>
@@ -274,5 +283,6 @@
             </div>     
         </section>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
