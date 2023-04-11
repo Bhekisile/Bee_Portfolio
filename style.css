@@ -1,6 +1,8 @@
 html,
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -21,12 +23,6 @@ body {
     scrollbar-width: none;
     scrollbar-color: transparent;
   }
-}
-
-html,
-body {
-  overflow-x: hidden;
-  max-width: 100%;
 }
 
 .container-bg {
@@ -564,10 +560,18 @@ textarea {
   margin-bottom: 24px;
 }
 
+form .flex .item2 {
+  align-items: center !important;
+  justify-content: center;
+  position: fixed;
+}
+
 .button {
   width: 129px;
   height: 48px;
   margin-bottom: 30px;
+  text-align: center;
+  justify-content: center;
 }
 
 .email {
@@ -597,6 +601,8 @@ form {
   background-image: url(./ImageP1/illustration-contact-form.png);
   background-repeat: no-repeat;
   background-position: bottom right;
+  display: flex;
+  flex-direction: column;
 }
 
 input:valid {
@@ -621,7 +627,8 @@ input:valid {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: url(./ImageP1/bottom-right-background-resized.png),
+    background-image: 
+      url(./ImageP1/bottom-right-background-resized.png),
       url(./ImageP1/bottom-left-background-resized.png),
       url(./ImageP1/bottom-background-resized.png),
       url(./ImageP1/desk-right-background-resized.png);
@@ -640,7 +647,7 @@ input:valid {
 
   .desk {
     display: block;
-    margin-top: 0;
+    margin-top: -30px;
     height: 72px;
     width: 100%;
   }
@@ -703,7 +710,7 @@ input:valid {
     background-image: url(./ImageP1/Header-llustration-desktop-1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -22.55px;
+    margin-top: -12.55px;
     margin-left: 27px;
     margin-bottom: 122px;
     background-position: fixed;
