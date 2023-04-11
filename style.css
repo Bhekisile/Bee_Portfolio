@@ -145,6 +145,13 @@ body {
 
 .user-form ul {
   list-style: none;
+  margin-left: -20px;
+}
+
+.social-links {
+  margin-left: 123px;
+  text-align: center;
+  justify-content: center;
 }
 
 .user-form > ul {
@@ -853,6 +860,8 @@ input:valid {
     margin-left: 143px;
     margin-right: 141px;
     margin-bottom: 230px;
+    text-align: center;
+    justify-content: center;
   }
 
   .flex-container {
