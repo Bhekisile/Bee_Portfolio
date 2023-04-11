@@ -52,7 +52,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://www.loom.com/share/00914bdf9755441fa29e4044c5ef647f)
+- [Live Demo Link](https://bhekisile.github.io/Bee_Portfolio/)
 
 <!-- GETTING STARTED -->
 
@@ -103,8 +103,6 @@ Example command:
 ### Deployment
 
 You can deploy this project using:
-
-https://bhekisile.github.io/Bee_Portfolio/
 
 <!-- AUTHORS -->
 
