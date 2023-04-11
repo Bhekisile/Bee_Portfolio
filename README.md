@@ -110,7 +110,6 @@ https://bhekisile.github.io/Bee_Portfolio/
 
 ## 👥 Authors <a name="authors"></a>
 
-
 👤 **Bhekisile**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
@@ -118,8 +117,6 @@ https://bhekisile.github.io/Bee_Portfolio/
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Pop-up window]**
 - [ ] **[Preserve data in the browser]**
