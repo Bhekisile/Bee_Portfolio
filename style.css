@@ -27,7 +27,7 @@ body {
 .container-bg {
   width: 100%;
   height: 6301px;
-  padding-bottom: 118px;
+  padding-bottom: 118px;*/
   margin-bottom: 59px;
 }
 
@@ -644,15 +644,22 @@ input:valid {
     margin-top: 0;
   }
 
+  .desk a {
+    text-decoration: none;
+  }
+
   .desk li {
     flex: 1;
+    height: 20px;
+  }
+
+  .cl-desk {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-    height: 20px;
   }
 
   .port {
@@ -676,13 +683,20 @@ input:valid {
   }
 
   .background-container {
-    height: 602px;
+    height: 800px;
+    overflow-y: hidden !important;
     background-image: url(./ImageP1/Header-llustration-desktop-1.png);
-    background-size: 100% 100%;
+    background-size: cover;
+    ;
     background-repeat: no-repeat;
-    margin-top: -62.55px;
+    margin-top: -22.55px;
     margin-left: 27px;
     margin-bottom: 122px;
+    background-position: fixed;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
   }
 
   .desktop {
