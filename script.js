@@ -15,3 +15,6 @@ getHam.addEventListener('click', clickMenu);
 
 const x = document.querySelector('#x');
 x.addEventListener('click', clickX);
+
+
+const mainCardArray = ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'];

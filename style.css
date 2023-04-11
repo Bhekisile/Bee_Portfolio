@@ -613,6 +613,13 @@ input:valid {
   justify-content: center;
 }
 
+.detail-mobile {
+  width: 343px;
+  height: 836px;
+  border: 1px solid black;
+  
+}
+
 @media (min-width: 768px) {
   .container-bg {
     width: 100%;
@@ -962,5 +969,9 @@ input:valid {
 
   .two ul {
     margin-top: 40px;
+  }
+
+  .detail-mobile {
+    display: none;
   }
 }
