@@ -33,14 +33,18 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+- **[HTML]**
+- **[CSS]**
+- **[Javascript]**
 
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[HTML]**
-- **[CSS]**
+- **[Full responsive]**
+- **[Interactive buttons]**
+- **[Navigational menu]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,18 +104,9 @@ Example command:
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
-
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
 
 👤 **Bhekisile**
 
@@ -121,9 +116,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[Javascript]**
+- [ ] **[Pop-up window]**
+- [ ] **[Preserve data in the browser]**
 
 <!-- CONTRIBUTING -->
 
@@ -149,7 +143,7 @@ If you like this project hit like.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Microverse (the whole team) for giving me this opportunity.
+I would like to thank Microverse and the whole team for giving me this opportunity to improve my skills in software development.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

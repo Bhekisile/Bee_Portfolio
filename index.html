@@ -12,22 +12,31 @@
 
 <body>
     <section class="container-bg">
+        <div id="ham-menu">
+            <img id="x" src="https://img.icons8.com/material-outlined/24/null/delete-sign.png"/>
+            <ul>
+              <li><a href="#portfolio" class="clr-grey" onclick="clickX()">Portfolio</a></li>
+              <li><a href="#about" class="clr-grey" onclick="clickX()">About</a></li>
+              <li><a href="#contact" class="clr-grey" onclick="clickX()">Contact</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="background-container">
             <header>
                 <nav class="nav">
-                    <img src="./ImageP1/hamburger.png" alt="hamburger">
+                    <img class="getHam" src="./ImageP1/hamburger.png" alt="hamburger">
                 </nav>
                 <nav class="desk">
                     <ul>
-                        <li class="port">Portfolio</li>
-                        <li class="about">About</li>
-                        <li class="contact">Contact</li>
+                        <li class="port"><a class="cl-desk" href="#portfolio">Portfolio</a></li>
+                        <li class="about"><a class="cl-desk" href="#about">About</a></li>
+                        <li class="contact"><a class="cl-desk" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
-        
+
                 <section class="background">
-            
+
                     <header class="myheader">
                         <h1> <span class="blue">Hey there. <br class="break">
                                 I’m Alex. <br></span>
@@ -36,7 +45,7 @@
                         </h1>
                     </header>
                     <article>
-                        <p>I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience! If
+                        <p class="double">I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience! If
                             you like what you see and have a project you need coded, <br>
                             don’t hesitate to contact me.</p>
                     </article>
@@ -55,7 +64,7 @@
                     </div>
                 </section>
         </div>
-        <section class="works">
+        <section class="works" id="portfolio">
             <header>
                 <h2 class="work">My Recent <br class="break"> Works</h2>
             </header>
@@ -170,15 +179,15 @@
                     </section>
                 </div>
             </main>
-            <section class="about-me">
+            <section class="about-me" id="about">
                 <article class="resume">
-                
+
                         <h2>About me</h2>
-                        <p> I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience!
+                        <p class="double"> I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience!
                             If you like what you see and have a project you need coded, <br>
                             don’t hesitate to contact me.</p>
                         <button class="btn" type="button">Get my resume</button>
-                    
+
                 </article>
                 <div class="grid">
                     <article class="card-works">
@@ -229,12 +238,12 @@
                 </article>
                 </div>
             </section>
-            
+
         </section>
-        <section class="user-form">
+        <section class="user-form" id="contact">
                 <div class="flex-container">
                     <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-            
+
                         <form action="https://formspree.io/f/mpznvgqj" method="post">
                             <div class="flex item1">
                                 <ul>
@@ -247,7 +256,7 @@
                             </div>
                             <div class="flex item2">
                                 <button type="submit" class="btn button">Get in touch</button>
-                            </div>                        
+                            </div>
                         </form>
                 </div>
             <div class="nav-icons">
@@ -270,9 +279,10 @@
                             <img class="img-bar break" src="./ImageP1/bottom-bar.png" alt="bottom-bar">
                         </div>
                     </nav>
-                
-            </div>     
+
+            </div>
         </section>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

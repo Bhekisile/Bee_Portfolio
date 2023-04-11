@@ -1,3 +1,10 @@
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   text-align: center;
 }
@@ -16,12 +23,6 @@ body {
     scrollbar-width: none;
     scrollbar-color: transparent;
   }
-}
-
-html,
-body {
-  overflow-x: hidden;
-  max-width: 100%;
 }
 
 .container-bg {
@@ -81,6 +82,101 @@ body {
   width: 327px;
 }
 
+#ham-menu {
+  display: none;
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  height: 760px;
+  width: 375px;
+  text-align: left;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.flex-icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  list-style: none;
+  max-width: 170px;
+  margin-left: 105px;
+  margin-right: 105px;
+  padding-left: 0;
+}
+
+.languages ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 327px;
+  height: 32px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  padding: 0;
+  margin-bottom: 29px;
+}
+
+.resume-cards ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 285px;
+  height: 44px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 72px;
+  padding: 0;
+  margin-left: 24px;
+  gap: 8px;
+}
+
+.user-form ul {
+  list-style: none;
+  margin-left: -20px;
+}
+
+.social-links {
+  margin-left: 123px;
+  text-align: center;
+  justify-content: center;
+}
+
+.user-form > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+#ham-menu ul {
+  list-style: none;
+}
+
+#ham-menu a {
+  text-decoration: none;
+}
+
+.clr-grey {
+  line-height: 60px;
+  font-weight: 600;
+  color: #3a4a42;
+  font-size: 32px !important;
+}
+
+#x {
+  position: absolute;
+  margin-left: 322px;
+  margin-top: -55px;
+}
+
 .blue {
   color: #172b4d;
   padding-top: 0;
@@ -95,29 +191,27 @@ h1 {
   margin-top: 0;
 }
 
-p {
+.flex-container p {
   width: 327px;
-  height: 164px;
+  height: 363px;
   font-family: "Inter", sans-serif;
   color: #172b4d;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
   margin-left: 27px;
   margin-right: 27px;
   text-align: center;
 }
 
-.flex-icons ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: flex-start;
-  list-style: none;
-  max-width: 170px;
-  margin-left: 105px;
-  margin-right: 105px;
-  padding-left: 0;
+.double {
+  width: 327px;
+  height: 164px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
 }
 
 .flex-icons li {
@@ -202,22 +296,6 @@ h3 {
   line-height: 32px;
   text-align: center;
   color: #3a4a42;
-}
-
-.languages ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  width: 327px;
-  height: 32px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  padding: 0;
-  margin-bottom: 29px;
 }
 
 .languages li {
@@ -336,24 +414,6 @@ h4 {
   margin-top: 0;
 }
 
-.resume-cards ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  width: 285px;
-  height: 44px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  margin-bottom: 72px;
-  padding: 0;
-  margin-left: 24px;
-  gap: 8px;
-}
-
 .resume-cards li {
   box-sizing: border-box;
   background-color: #fff;
@@ -454,16 +514,6 @@ h4 {
   margin-bottom: 48px;
 }
 
-.user-form ul {
-  list-style: none;
-}
-
-.user-form > ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-
 input {
   width: 295px;
   height: 18px;
@@ -510,10 +560,18 @@ textarea {
   margin-bottom: 24px;
 }
 
+form .flex .item2 {
+  align-items: center !important;
+  justify-content: center;
+  position: fixed;
+}
+
 .button {
   width: 129px;
   height: 48px;
   margin-bottom: 30px;
+  text-align: center;
+  justify-content: center;
 }
 
 .email {
@@ -543,6 +601,8 @@ form {
   background-image: url(./ImageP1/illustration-contact-form.png);
   background-repeat: no-repeat;
   background-position: bottom right;
+  display: flex;
+  flex-direction: column;
 }
 
 input:valid {
@@ -567,7 +627,11 @@ input:valid {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: url(./ImageP1/bottom-right-background-resized.png), url(./ImageP1/bottom-left-background-resized.png), url(./ImageP1/bottom-background-resized.png), url(./ImageP1/desk-right-background-resized.png);
+    background-image:
+      url(./ImageP1/bottom-right-background-resized.png),
+      url(./ImageP1/bottom-left-background-resized.png),
+      url(./ImageP1/bottom-background-resized.png),
+      url(./ImageP1/desk-right-background-resized.png);
     background-repeat: no-repeat;
     background-position-y: 98%, 97%, 95%, 62%;
     background-position-x: 100%, 0%, 25%;
@@ -583,7 +647,7 @@ input:valid {
 
   .desk {
     display: block;
-    margin-top: 0;
+    margin-top: -30px;
     height: 72px;
     width: 100%;
   }
@@ -602,15 +666,22 @@ input:valid {
     margin-top: 0;
   }
 
+  .desk a {
+    text-decoration: none;
+  }
+
   .desk li {
     flex: 1;
+    height: 20px;
+  }
+
+  .cl-desk {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-    height: 20px;
   }
 
   .port {
@@ -634,13 +705,19 @@ input:valid {
   }
 
   .background-container {
-    height: 650px;
+    height: 800px;
+    overflow-y: hidden !important;
     background-image: url(./ImageP1/Header-llustration-desktop-1.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -62.55px;
+    margin-top: -12.55px;
     margin-left: 27px;
     margin-bottom: 122px;
+    background-position: fixed;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 
   .desktop {
@@ -657,7 +734,7 @@ input:valid {
     display: none;
   }
 
-  p {
+  .double {
     width: 70%;
     height: fit-content;
     font-size: 18px;
@@ -790,11 +867,13 @@ input:valid {
     margin-left: 143px;
     margin-right: 141px;
     margin-bottom: 230px;
+    text-align: center;
+    justify-content: center;
   }
 
   .flex-container {
     display: flex;
-    width: 100%;
+    width: 94%;
   }
 
   .flex-container p {
@@ -809,10 +888,12 @@ input:valid {
     font-size: 30px;
     line-height: 52px;
     margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   form {
-    width: 100%;
+    width: 90%;
     margin-top: 80;
     display: flex;
     flex-direction: column;
