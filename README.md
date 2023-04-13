@@ -8,13 +8,10 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
   - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -48,12 +45,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://bhekisile.github.io/Bee_Portfolio/)
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -62,7 +53,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need: Live Server
 
 ### Setup
 
@@ -70,53 +61,30 @@ Clone or fork this repository to your desired folder:
 
 -git clone https://github.com/Bhekisile/Bee_Portfolio.git
 
- ### Install
-
-Install this project with:
-
--npm install
-
 ### Usage
 
-To run the project, execute the following command:
+To run the project, you need: Live Server
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: Netlify
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Bhekisile**
+👤 **Bhekisile Jozi**
+   **Blesslin Jerish R**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@githubhandle](https://github.com/Bhekisile)
+
+- LinkedIn: [BhekisileJozi](https://www.linkedin.com/in/bhekisile-jozi-b9823369/)
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Pop-up window]**
 - [ ] **[Preserve data in the browser]**
 
 <!-- CONTRIBUTING -->
@@ -134,7 +102,7 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 
-If you like this project hit like.
+If you like this project hit the like button.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
