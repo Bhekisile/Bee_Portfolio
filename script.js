@@ -86,8 +86,23 @@ const dataCards = [
       `
     ul.append(li);
     
-    
+function qs(ClassorId) {
+  return document.querySelector(ClassorId);
+}
 
+const form = qs("form");
+const name = qs('input[name="name"]');
+const email = qs('input[name="email"]');
+const txt = qs('textarea[name="comment"]');
 
-
-
+form.addEventListener("submit", (event) => {
+  const errorMessages = [];
+ //comment
+  if (errorMessages.length > 0) {
+    event.preventDefault();
+    error.textContent = errorMessages.join(".");
+  } else {
+    error.textContent = "";
+  }
+});
+  
