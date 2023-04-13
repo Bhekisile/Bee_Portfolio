@@ -85,7 +85,7 @@ const dataCards = [
       <li class="badge">${dataCards[1].techStack.tech3}</li>
       `
     ul.append(li);
-    
+
 function qs(ClassorId) {
   return document.querySelector(ClassorId);
 }
@@ -97,7 +97,15 @@ const txt = qs('textarea[name="comment"]');
 
 form.addEventListener("submit", (event) => {
   const errorMessages = [];
- //comment
+  if (name.value.trim() === "") {
+    errorMessages.push("Name is required");
+  } else if (email.value.trim() === "") {
+    errorMessages.push("Email is required");
+  } else if (txt.value.trim() === "") {
+    errorMessages.push("Message is required");
+  } else if (email.value !== email.value.toLowerCase()) {
+    errorMessages.push("Email must be in lowercase");
+  }
   if (errorMessages.length > 0) {
     event.preventDefault();
     error.textContent = errorMessages.join(".");
@@ -105,4 +113,4 @@ form.addEventListener("submit", (event) => {
     error.textContent = "";
   }
 });
-  
+
