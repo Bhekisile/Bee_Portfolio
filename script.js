@@ -40,9 +40,15 @@ function clickPopX() {
   pops.style.display = 'none';
 }
 
+const popX = document.getElementById('pop-x');
+popX.addEventListener('click', clickPopX);
+
 function pop() {
   pops.style.display = 'block';
 }
+
+const pWin = document.querySelector('.pwin');
+pWin.addEventListener('click', pop);
 
 const dataCards = [
   {
