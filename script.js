@@ -51,82 +51,85 @@ function clickPopX() {
 
 const dataCards = [
   {
-    id: 0,
+    id: 1,
     image: './ImageP1/Snapshoot Portfolio1.png',
-    techStack: {
-      tech1: 'Codekit',
-      tech2: 'GitHub',
-      tech3: 'JavaScript',
-      tech4: 'Bootstrap',
-      tech5: 'Terminal',
-      tech6: 'Codepen',
+    heading: 'Keeping track of hundreds of components',
+    techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     },
+  {
+    id: 2,
+    image: './ImageP1/Snapshoot Portfolio.png',
+    heading: 'Keeping track of hundreds of components',
+    techStack: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
   },
   {
-    id: 1,
+    id: 3,
+    image: './ImageP1/Snapshoot Portfolio1.png',
+    heading: 'Keeping track of hundreds of components',
+    techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    },
+  {
+    id: 4,
     image: './ImageP1/Snapshoot Portfolio.png',
-    techStack: {
-      tech1: 'Ruby on Rails',
-      tech2: 'CSS',
-      tech3: 'JavaScript',
+    heading: 'Keeping track of hundreds of components',
+    techStack: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
   },
-},
+  {
+    id: 5,
+    image: './ImageP1/Snapshoot Portfolio1.png',
+    heading: 'Keeping track of hundreds of components',
+    techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    },
+  {
+    id: 6,
+    image: './ImageP1/Snapshoot Portfolio.png',
+    heading: 'Keeping track of hundreds of components',
+    techStack: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+  },
 ]
 
-/*function mediaQueryMatches() {
-  const x = window.matchMedia("(max-width: 500px)")
-  if (x.matches) {
-    let popup = document.getElementById("popup");
-    let img = document.createElement("img")
-    img.src = dataCards[0].image;
-    popup.appendChild(img);
-
-    var ul = document.getElementById("badges");
-    var li = document.createElement("li");
-    //var text = document.createTextNode(skill);
-    //li.appendChild(text);
-    ul.appendChild(li);
-    li.classList.add("badge");
-    
-  } else {
-    let img = document.createElement("img")
-    img.src = dataCards[1].image;
-    popup.appendChild(img);
-
-    li.classList.add("badge");
-  }
-  pop();
-}*/
 let popupBtns = document.querySelectorAll('.pwin');
 console.log(popupBtns);
 let popupBtnsArray = Array.from(popupBtns);
 console.log('popupBtnsArray', popupBtnsArray);
 const popup = document.getElementById('popup');
 
+dataCards.forEach((card,i) => {
+  const temp = document.createElement('div');
+  temp.innerHTML = `
+  <div class='popupCont'><div><img src=${card.image}></div>
+  <h3>${card.heading}</h3>
+  <ul>
+  ${card.techStack.map((tech) => `<li>${tech}</li>`)}
+  </ul>
+  <p>${card.lorem}</p></div>
+  `;
+  popup.append(temp);
+})
 
-function topper() {
-  const clicked = () => {
-    console.log('clicked');
-    popup.classList.remove('hidden');
-    popup.classList.add('visible');
-  };
-  
-  for(let i = 0; i < dataCards.length; i++) {
-    popup.innerHTML = `
-    <img src=${dataCards.image}>
-    <ul>
-      ${
-        dataCards.techStack.map((tech) => <li>{tech}</li>)
-      }
-    </ul>
-    `
+const clicked = () => {
+  console.log('clicked');
+  popup.classList.remove('hidden');
+  popup.classList.add('visible');
+};
+
+popupBtnsArray.forEach((btn, i) => {
+  btn.addEventListener('click', clicked)
+})
+
+const popupConts = document.querySelectorAll('.popupCont');
+console.log('popupConts', popupConts);
+
+for(let i = 0; i < popupConts.length; i++) {
+  for( let j = 0; j < popupBtns.length; j++) {
+    popupBtns[i].onclick = function openPopup() {
+      popupConts[i].style.visibility = 'visible';
+    }
   }
-
-  popupBtnsArray.forEach((btn, i) => {
-    btn.addEventListener('click', clicked)
-  })
 }
-topper()
-
-
-

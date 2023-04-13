@@ -757,8 +757,10 @@ input:valid {
 }
 
 #popup {
-  
+  position: absolute;
   background-color: red;
+  height: 836px;
+  width: 90%;
 }
 
 .visible {
@@ -767,6 +769,10 @@ input:valid {
 
 .hidden {
   display: none;
+}
+
+.popupCont {
+  visibility: hidden;
 }
 
 @media (min-width: 768px) {
