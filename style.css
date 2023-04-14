@@ -642,23 +642,52 @@ input:valid {
   text-align: left;
 }
 
-#badges {
-  display: flex !important;
+.flex-badges ul {
+  display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 8px;
   /* margin-left: -37px; */
   list-style: none;
   padding: 0;
-  justify-content: space-between;
+  width: 261px;
+  height: 32px;
+  /* justify-content: space-between; */
+  border: 1px solid red;
 }
 
-#badges li {
+.flex-badges li {
   flex: 1;
-  padding: 0.5em 0.75em 0.5em;
-  border-radius: 0.25em;
+  display: inline-block;
 }
 
-.badge {
+.flex-badges li:nth-child(1) {
+  width: 106px;
+  height: 32px;
+  margin-left: 0px;
+  box-sizing: border-box;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  padding-top: 4px;
+}
+
+.flex-badges li:nth-child(2) {
+  width: 50px;
+  height: 32px;
+  box-sizing: border-box;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+}
+
+.flex-badges li:nth-child(3) {
+  width: 89px;
+  height: 32px;
+  box-sizing: border-box;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+}
+
+/* .badge {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -667,7 +696,7 @@ input:valid {
   line-height: 16px;
   background: #ebf0ee;
   color: #3a4a42;
-}
+} */
 
 #js-p {
   font-family: "Inter", sans-serif;
@@ -677,6 +706,8 @@ input:valid {
   line-height: 24px;
   text-align: left;
   width: 311px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 #js-p2 {
@@ -687,6 +718,8 @@ input:valid {
   line-height: 24px;
   text-align: left;
   width: 311px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .btn-live {
@@ -746,8 +779,7 @@ input:valid {
 
 #popup img {
   display: block;
-  /* display: flex;
-  margin-top: 1.5em;
+  /* margin-top: ;
   margin-bottom: 1.5em;
   border: none;
   width: fit-content;
@@ -758,7 +790,8 @@ input:valid {
   letter-spacing: 2px;
   padding: 1em 1.5em;
   color: white;
-  border-radius: 3px; */
+  border-radius: 3px;
+} */
 }
 
 @media (min-width: 768px) {
@@ -1158,21 +1191,36 @@ input:valid {
     width: 99%;
   }
 
-  .btn-live {
-    margin-right: 178px;
-    margin-bottom: 317px;
-  }
-
   #pop-x {
+    width: 40px;
+    height: 40px;
+    background-color: #dfe1e6;
+    color: #67798e;
     margin-top: -64px;
     margin-left: 400px;
     filter: grayscale(50%)
   }
+
   #popup img {
     display: block;
-    /* width: 98%;
-    min-width: 768px; */
+    width: 96%;
+    height: 600px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
+  .btn-desktop {
+    width: 320px;
+    height: 48px;
+    margin-right: 0;
+    float: right;
+    position: absolute;
+    top: 66%;
+    right: 2%;
+    border: 1px solid red;
+  }
 
+  .btn-d {
+    float: ;
+  }
 }
