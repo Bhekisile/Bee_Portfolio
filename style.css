@@ -696,12 +696,12 @@ input:valid {
 
 .card-button {
   display: flex;
-  justify-content: space-between;
+  gap: 12px;
 }
 
 .btn-live-source {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
   color: white;
   text-decoration: none;
@@ -722,7 +722,7 @@ input:valid {
   width: fit-content;
   align-items: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
   padding: 1em 1.5em;
   color: white;
@@ -739,7 +739,7 @@ input:valid {
   width: fit-content;
   align-items: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
   padding: 1em 1.5em;
   color: white;
@@ -783,7 +783,7 @@ input:valid {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
     font-size: 1.5em;
-    width: 80%;
+    width: 100%;
   }
 
   .lang-list {
@@ -799,28 +799,23 @@ input:valid {
   .card-button {
     grid-column: 3 / 5;
     grid-row: 3 / 4;
-    width: 82%;
-    margin-left: 0;
     display: flex;
-    justify-content: space-between !important;
-    border: 1px solid red;
+    justify-content: flex-end;
   }
 
   .btn-live {
-    width: 175px;
-    height: 48px;
-    margin-right: 6px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
     border-radius: 8px;
     background-color: #36b37e;
-    border: 1px solid blue;
   }
 
   .btn-source {
-    width: 209px;
-    height: 48px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
     background-color: #36b37e;
-    border: 1px solid blue;
   }
 
   .container-bg {

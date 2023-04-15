@@ -43,12 +43,11 @@ const dataCards = [
       tech6: 'Codepen',
     },
     lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    linkLive: 'See live',
-    linkSource: 'See source',
+    linkLive: 'https://www.google.com',
+    linkSource: 'https://github.com/bhekisile/',
   },
   {
     id: 3,
-    image1: './ImageP1/x.png',
     image: './ImageP1/Snapshoot1.png',
     heading: 'Keeping track of hundreds of components',
     techStack: {
@@ -58,12 +57,11 @@ const dataCards = [
     },
     lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    button: 'See live',
-    button1: 'See source',
+    button: 'https://www.google.com',
+    button1: 'https://github.com/bhekisile/',
   },
   {
     id: 4,
-    image1: './ImageP1/x.png',
     image: './ImageP1/Snapshoot1.png',
     heading: 'Keeping track of hundreds of components',
     techStack: {
@@ -73,12 +71,11 @@ const dataCards = [
     },
     lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    button: 'See live',
-    button1: 'See source',
+    button: 'https://www.google.com',
+    button1: 'https://github.com/bhekisile/',
   },
   {
     id: 5,
-    image1: './ImageP1/x.png',
     image: './ImageP1/Snapshoot1.png',
     heading: 'Keeping track of hundreds of components',
     techStack: {
@@ -88,12 +85,11 @@ const dataCards = [
     },
     lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    button: 'See live',
-    button1: 'See source',
+    button: 'https://www.google.com',
+    button1: 'https://github.com/bhekisile/',
   },
   {
     id: 6,
-    image1: './ImageP1/x.png',
     image: './ImageP1/Snapshoot1.png',
     heading: 'Keeping track of hundreds of components',
     techStack: {
@@ -103,8 +99,8 @@ const dataCards = [
     },
     lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    button: 'See live',
-    button1: 'See source',
+    button: 'https://www.google.com',
+    button1: 'https://github.com/bhekisile/',
   },
 ]
 
