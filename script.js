@@ -114,7 +114,7 @@ const mobileCards = (card) => `
               <img src=${dataCards[card].image} alt="">
           </div>
           <h2 class="card-heading card">
-              ${dataCards.heading}
+              ${dataCards[card].heading}
           </h2>
           <ul class="lang-list">
               <li class="li-mobile">${dataCards[card].techStack.tech1}</li>
@@ -148,8 +148,12 @@ const mobileCards = (card) => `
     popupBtns[i].addEventListener('click', () => {
       const mobileCard = document.createElement('div');
       mobileCard.innerHTML = mobileCards(i);
+<<<<<<< HEAD
       // Error 3
       document.body.appendChild(mobileCard)
+=======
+      document.body.appendChild(mobileCard);
+>>>>>>> 9968681 (Find and Debug Bugs)
       const btnClose = document.querySelector('.btn-close');
       btnClose.addEventListener('click', async () => {
         document.body.removeChild(mobileCard);
