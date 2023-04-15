@@ -113,9 +113,8 @@ const mobileCards = (card) => `
           <div class="card-image">
               <img src=${dataCards[card].image} alt="">
           </div>
-          <h2 class="card-heading">
-   //Error 1
-              ${dataCards[card]].heading}
+          <h2 class="card-heading card">
+              ${dataCards.heading}
           </h2>
           <ul class="lang-list">
               <li class="li-mobile">${dataCards[card].techStack.tech1}</li>
@@ -142,7 +141,7 @@ const mobileCards = (card) => `
           <script src="index.js"></script>
   </article>
   `;
-  
+
   const popupBtns = document.querySelectorAll('.pwin');
 
   for (let i = 0; i < popupBtns.length; i++) {
