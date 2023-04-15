@@ -140,6 +140,7 @@ const mobileCards = (card) => `
           <script src="index.js"></script>
   </article>
   `;
+  
   const popupBtns = document.querySelectorAll('.pwin');
 
   for (let i = 0; i < popupBtns.length; i++) {
