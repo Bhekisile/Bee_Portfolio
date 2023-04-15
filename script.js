@@ -142,7 +142,7 @@ const mobileCards = (card) => `
   `;
 
 const popupBtns = document.querySelectorAll('.pwin');
-  for (let i = 0; i < popupBtns.length; i+=1) {
+  for (let i = 0; i < popupBtns.length; i++) {
 popupBtns[i].addEventListener('click', () => {
 const mobileCard = document.createElement('div');
 mobileCard.innerHTML = mobileCards(i);
