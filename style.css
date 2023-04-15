@@ -744,6 +744,7 @@ input:valid {
   padding: 1em 1.5em;
   color: white;
 }
+
 @media (min-width: 768px) {
   .li-mobile {
     background: #EBF0EE;
@@ -781,63 +782,7 @@ input:valid {
     width: 100%;
   }
   
-.btn-source {
-  height: 48px;
-  border-radius: 4px;
-  background-color: #36b37f;
-  display: flex;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  border: none;
-  width: fit-content;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 2px;
-  padding: 1em 1.5em;
-  color: white;
-}
 
-@media (min-width: 768px) {
-  .li-mobile {
-    background: #ebf0ee;
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.75em;
-    line-height: 1em;
-    letter-spacing: 0.03em;
-    color: #344563;
-    border-radius: 0.5em;
-  }
-
-  .mobile-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 60px;
-    grid-template-rows: 60px 50% 1fr 60px 1fr;
-  }
-
-  .btn-close {
-    background: #ebecf0;
-    position: relative;
-    grid-column: -2 / -1;
-    grid-row: 1/2;
-    width: 40px;
-    height: 40px;
-    margin-top: 10px !important;
-  }
-
-  .card-image {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-  }
-
-  .card-heading {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
-    font-size: 1.5em;
-    width: 100%;
-  }
 
   .lang-list {
     grid-column: 1 /-1;
