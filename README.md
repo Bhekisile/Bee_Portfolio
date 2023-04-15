@@ -12,6 +12,9 @@
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
   - [Install](#install)
+
+  - [Usage](#usage)
+
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -45,6 +48,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link]
+
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -63,7 +73,17 @@ Clone or fork this repository to your desired folder:
 
 ### Usage
 
-To run the project, you need: Live Server
+
+To run the project, use live server.
+
+<!--
+Example command:
+
+```sh
+  rails server
+```
+--->
+
 
 
 ### Deployment
@@ -74,12 +94,13 @@ You can deploy this project using: Netlify
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Bhekisile Jozi**
+
+👤 **Bhekisile**
    **Blesslin Jerish R**
 
-- GitHub: [@githubhandle](https://github.com/Bhekisile)
+- GitHub: [@githubhandle](https://github.com/bhekisile/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bhekisile-jozi-b9823369/)
 
-- LinkedIn: [BhekisileJozi](https://www.linkedin.com/in/bhekisile-jozi-b9823369/)
 
 <!-- FUTURE FEATURES -->
 

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bee Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 
@@ -36,7 +37,7 @@
             </header>
 
                 <section class="background">
-
+                   
                     <header class="myheader">
                         <h1> <span class="blue">Hey there. <br class="break">
                                 I’m Alex. <br></span>
@@ -44,6 +45,7 @@
                                 developer</span>
                         </h1>
                     </header>
+
                     <article>
                         <p class="double">I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience! If
                             you like what you see and have a project you need coded, <br>
@@ -64,6 +66,7 @@
                     </div>
                 </section>
         </div>
+
         <section class="works" id="portfolio">
             <header>
                 <h2 class="work">My Recent <br class="break"> Works</h2>
@@ -72,24 +75,9 @@
                 <img src="./ImageP1/Indicator.png" alt="Indicator">
             </div>
             <main class="cards">
-                <section id="pop-outer">
-                    <img
-                      onclick="clickPopX()"
-                      id="pop-x"
-                      src="https://img.icons8.com/material-outlined/24/null/delete-sign.png"/>
-                    <div id="popup"></div>
-                    <div id="popup-content"></div>
-                    <ul id="badges"></ul>
-                    <div id="js-p"></div>
-                    <div id="js-p2"></div>
-                    <button class="btn btn-see btn-live">See live</button>
-                    <img
-                      id="ext"
-                      src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/external-link.png"
-                    />
-                    <button class="btn btn-see btn-source">See source</button>
-                    <img src="./ImageP1/github-w.png" alt="" id="g" />
-                  </section>
+
+                
+
                 <div class="card">
                     <div class="card-img">
                     </div>
@@ -105,27 +93,11 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
                     </section>
-                    <section id="pop-outer">
-                        <img
-                          onclick="clickPopX()"
-                          id="pop-x"
-                          src="https://img.icons8.com/material-outlined/24/FFFFFF/delete-sign.png"
-                        />
-                        <figure id="popup"></figure>
-                        <div id="popup-content"></div>
-                        <ul id="badges"></ul>
-                        <div id="js-p"></div>
-                        <div id="js-p2"></div>
-                        <button class="btn btn-see btn-live">See live</button>
-                        <img
-                          id="ext"
-                          src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/external-link.png"
-                        />
-                        <button class="btn btn-see btn-source">See source</button>
-                        <img src="./ImageP1/github@.png" alt="Github Logo" id="g" />
-                      </section>
+                    
+
                 </div>
                 <div class="card">
                     <div class="card-img">
@@ -142,7 +114,9 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
+
                     </section>
                 </div>
                 <div class="card">
@@ -160,7 +134,9 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
+
                     </section>
                 </div>
                 <div class="card">
@@ -178,7 +154,9 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
+
                     </section>
                 </div>
                 <div class="card">
@@ -195,7 +173,9 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
+
                     </section>
                 </div>
                 <div class="card">
@@ -212,7 +192,9 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
+
                     </section>
                 </div>
             </main>
@@ -301,7 +283,8 @@
                 <div class="bottom-background line r-bg">
                     <img src="./ImageP1/desk-line.png" alt="Line">
                 </div>
-                <p class="email break">myemailhere@email.com</p>
+                <p class="email break">myemailhere@email.com
+                </p>
                 <nav class="social-links">
                     <div class="flex-icons two">
                         <ul>
@@ -317,10 +300,12 @@
                             <img class="img-bar break" src="./ImageP1/bottom-bar.png" alt="bottom-bar">
                         </div>
                     </nav>
-
+                    <div id="popup"></div>
             </div>
         </section>
+        
     </section>
+    
     <script src="script.js"></script>
 </body>
 </html>

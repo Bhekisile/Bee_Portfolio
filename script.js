@@ -15,45 +15,24 @@ getHam.addEventListener('click', clickMenu);
 
 const x = document.querySelector('#x');
 x.addEventListener('click', clickX);
-
-const he1 = document.getElementById('popup-content');
-const heading = 'Keeping track of hundreds of components';
-const h1 = document.createElement('h1');
-h1.innerText = heading;
-he1.appendChild(h1);
-
-const para = document.getElementById('js-p');
-const lorem = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.';
-const p = document.createElement('p');
-p.innerText = lorem;
-para.appendChild(p);
-
-const para2 = document.getElementById('js-p2');
-const lorem2 = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.';
-const p2 = document.createElement('p');
-p2.innerText = lorem2;
-para2.appendChild(p2);
-
-const pops = document.getElementById('pop-outer');
-
-function clickPopX() {
-  pops.style.display = 'none';
-}
-
-const popX = document.getElementById('pop-x');
-popX.addEventListener('click', clickPopX);
-
-function pop() {
-  pops.style.display = 'block';
-}
-
-const pWin = document.querySelector('.pwin');
-pWin.addEventListener('click', pop);
-
 const dataCards = [
   {
-    id: 0,
-    image: './ImageP1/Snapshoot Portfolio1.png',
+    id: 1,
+    image: './ImageP1/Snapshoot1.png',
+    heading: 'Keeping track of hundreds of components',
+    techStack: {
+      tech1: 'Ruby on Rails',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+    },
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    linkLive: 'https://www.google.com',
+    linkSource: 'https://github.com/bhekisile/',
+  },
+  {
+    id: 2,
+    image: './ImageP1/Snapshoot2.png',
+    heading: 'Keeping track of hundreds of components',
     techStack: {
       tech1: 'Codekit',
       tech2: 'GitHub',
@@ -62,57 +41,114 @@ const dataCards = [
       tech5: 'Terminal',
       tech6: 'Codepen',
     },
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    linkLive: 'https://www.google.com',
+    linkSource: 'https://github.com/bhekisile/',
   },
   {
-    id: 1,
-    image: './ImageP1/Snapshoot Portfolio.png',
+    id: 3,
+    image: './ImageP1/Snapshoot1.png',
+    heading: 'Keeping track of hundreds of components',
     techStack: {
       tech1: 'Ruby on Rails',
       tech2: 'CSS',
       tech3: 'JavaScript',
     },
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    button: 'https://www.google.com',
+    button1: 'https://github.com/bhekisile/',
+  },
+  {
+    id: 4,
+    image: './ImageP1/Snapshoot1.png',
+    heading: 'Keeping track of hundreds of components',
+    techStack: {
+      tech1: 'Ruby on Rails',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+    },
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    button: 'https://www.google.com',
+    button1: 'https://github.com/bhekisile/',
+  },
+  {
+    id: 5,
+    image: './ImageP1/Snapshoot1.png',
+    heading: 'Keeping track of hundreds of components',
+    techStack: {
+      tech1: 'Ruby on Rails',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+    },
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    button: 'https://www.google.com',
+    button1: 'https://github.com/bhekisile/',
+  },
+  {
+    id: 6,
+    image: './ImageP1/Snapshoot1.png',
+    heading: 'Keeping track of hundreds of components',
+    techStack: {
+      tech1: 'Ruby on Rails',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+    },
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    button: 'https://www.google.com',
+    button1: 'https://github.com/bhekisile/',
   },
 ];
 
-const popup = document.getElementById('popup');
-const img = document.createElement('img');
-img.src = dataCards[1].image;
-popup.appendChild(img);
+const mobileCards = (card) => `
+  <article class="mobile-cards">
+          <button type="button" class="btn-close">
+              <img src="./ImageP1/close-icon.png" alt="close icon">
+          </button>
+          <div class="card-image">
+              <img src=${dataCards[card].image} alt="">
+          </div>
+          <h2 class="card-heading">
+              ${dataCards[card].heading}
+          </h2>
+          <ul class="lang-list">
+              <li class="li-mobile">${dataCards[card].techStack.tech1}</li>
+              <li class="li-mobile">${dataCards[card].techStack.tech2}</li>
+              <li class="li-mobile">${dataCards[card].techStack.tech3}</li>
+          </ul>
+          <p class="card-para">
+            ${dataCards[card].lorem}
+          </p>
+          <div class="card-button">
+                  <button class="btn-live">
+                  <a href=${dataCards[card].linkLive} class='btn-live-source'>
+                  See live
+                  <img src="./ImageP1/icon-live.png" alt="">
+                  </a>
+                  </button>
+                  <button class="btn-source">
+                  <a href=${dataCards[card].linkSource} class='btn-live-source'>
+                  See source
+                  <img src="./ImageP1/icon-source.png" alt="">
+                  </a>
+                  </button>
+          </div>
+          <script src="index.js"></script>
+  </article>
+  `;
 
-const ul = document.getElementById('badges');
-const li = document.createElement('li');
-li.innerHTML = `
-      <li class="badge">${dataCards[1].techStack.tech1}</li>
-      <li class="badge">${dataCards[1].techStack.tech2}</li>
-      <li class="badge">${dataCards[1].techStack.tech3}</li>
-      `;
-ul.append(li);
-
-function qs(ClassorId) {
-  return document.querySelector(ClassorId);
+const popupBtns = document.querySelectorAll('.pwin');
+for (let i = 0; i < popupBtns.length; i += 1) {
+  popupBtns[i].addEventListener('click', () => {
+    const mobileCard = document.createElement('div');
+    mobileCard.innerHTML = mobileCards(i);
+    document.body.appendChild(mobileCard);
+    const btnClose = document.querySelector('.btn-close');
+    btnClose.addEventListener('click', async () => {
+      document.body.removeChild(mobileCard);
+    });
+  });
 }
-
-const form = qs('form');
-const name = qs('input[name="name"]');
-const email = qs('input[name="email"]');
-const txt = qs('textarea[name="comment"]');
-const error = document.getElementById('error');
-
-form.addEventListener('submit', (event) => {
-  const errorMessages = [];
-  if (name.value.trim() === '') {
-    errorMessages.push('Name is required');
-  } else if (email.value.trim() === '') {
-    errorMessages.push('Email is required');
-  } else if (txt.value.trim() === '') {
-    errorMessages.push('Message is required');
-  } else if (email.value !== email.value.toLowerCase()) {
-    errorMessages.push('Email must be in lowercase');
-  }
-  if (errorMessages.length > 0) {
-    event.preventDefault();
-    error.textContent = errorMessages.join('.');
-  } else {
-    error.textContent = '';
-  }
-});
