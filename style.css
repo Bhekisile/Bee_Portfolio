@@ -606,7 +606,14 @@ form {
 }
 
 input:valid {
-  border: 2px solid #36b37f;
+  border: 2px solid transparent;
+}
+
+#error {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .img-bar {
@@ -743,6 +750,7 @@ input:valid {
   letter-spacing: 2px;
   padding: 1em 1.5em;
   color: white;
+
 }
 
 @media (min-width: 768px) {
@@ -1167,4 +1175,7 @@ input:valid {
   .two ul {
     margin-top: 40px;
   }
+
+
+  
 }
