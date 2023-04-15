@@ -67,7 +67,7 @@ const dataCards = [
     techStack: {
       tech1: 'Ruby on Rails',
       tech2: 'CSS',
-      tech3: 'JavaScript',
+      tech3: 'JavaScript'
     },
     lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
@@ -113,7 +113,7 @@ const mobileCards = (card) => `
               <img src=${dataCards[card].image} alt="">
           </div>
           <h2 class="card-heading">
-              ${dataCards[card].heading}
+              ${dataCards.heading}
           </h2>
           <ul class="lang-list">
               <li class="li-mobile">${dataCards[card].techStack.tech1}</li>
@@ -147,7 +147,7 @@ const mobileCards = (card) => `
     popupBtns[i].addEventListener('click', () => {
       const mobileCard = document.createElement('div');
       mobileCard.innerHTML = mobileCards(i);
-      document.body.appendChild(mobileCard);
+      document.body.appendChild(mobileCard)
       const btnClose = document.querySelector('.btn-close');
       btnClose.addEventListener('click', async () => {
         document.body.removeChild(mobileCard);
