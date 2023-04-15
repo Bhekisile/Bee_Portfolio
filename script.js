@@ -152,4 +152,3 @@ for (let i = 0; i < popupBtns.length; i += 1) {
     });
   });
 }
-

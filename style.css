@@ -750,7 +750,6 @@ input:valid {
   letter-spacing: 2px;
   padding: 1em 1.5em;
   color: white;
-
 }
 
 @media (min-width: 768px) {
@@ -1175,7 +1174,4 @@ input:valid {
   .two ul {
     margin-top: 40px;
   }
-
-
-  
 }
