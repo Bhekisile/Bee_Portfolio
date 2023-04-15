@@ -19,98 +19,141 @@ x.addEventListener('click', clickX);
 const dataCards = [
   {
     id: 1,
-    image1: 'https://img.icons8.com/material-outlined/24/000000/delete-sign.png',
     image: './ImageP1/Snapshoot1.png',
     heading: 'Keeping track of hundreds of components',
-    techStack: ['Ruby on Rails', 'CSS', 'JavaScript'],
-    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    techStack: {
+      tech1: 'Ruby on Rails',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
     },
+    lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    linkLive: 'https://www.google.com',
+    linkSource: 'https://github.com/bhekisile/',
+  },
   {
     id: 2,
-    image1: 'https://img.icons8.com/material-outlined/24/FFFFFF/delete-sign.png',
-    image: './ImageP1/Snapshoot1.png',
+    image: './ImageP1/Snapshoot2.png',
     heading: 'Keeping track of hundreds of components',
-    techStack: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    techStack: {
+      tech1: 'Codekit',
+      tech2: 'GitHub',
+      tech3: 'JavaScript',
+      tech4: 'Bootstrap',
+      tech5: 'Terminal',
+      tech6: 'Codepen',
+    },
     lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    linkLive: 'See live',
+    linkSource: 'See source',
   },
   {
     id: 3,
-    image1: 'https://img.icons8.com/material-outlined/24/FFFFFF/delete-sign.png',
+    image1: './ImageP1/x.png',
     image: './ImageP1/Snapshoot1.png',
     heading: 'Keeping track of hundreds of components',
-    techStack: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    techStack: {
+      tech1: 'Ruby on Rails',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+    },
     lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    },
+    button: 'See live',
+    button1: 'See source',
+  },
   {
     id: 4,
-    image1: 'https://img.icons8.com/material-outlined/24/FFFFFF/delete-sign.png',
+    image1: './ImageP1/x.png',
     image: './ImageP1/Snapshoot1.png',
     heading: 'Keeping track of hundreds of components',
-    techStack: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    techStack: {
+      tech1: 'Ruby on Rails',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+    },
     lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    button: 'See live',
+    button1: 'See source',
   },
   {
     id: 5,
-    image1: 'https://img.icons8.com/material-outlined/24/FFFFFF/delete-sign.png',
+    image1: './ImageP1/x.png',
     image: './ImageP1/Snapshoot1.png',
     heading: 'Keeping track of hundreds of components',
-    techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    techStack: {
+      tech1: 'Ruby on Rails',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+    },
     lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    },
+    button: 'See live',
+    button1: 'See source',
+  },
   {
     id: 6,
-    image1: 'https://img.icons8.com/material-outlined/24/FFFFFF/delete-sign.png',
+    image1: './ImageP1/x.png',
     image: './ImageP1/Snapshoot1.png',
     heading: 'Keeping track of hundreds of components',
-    techStack: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    techStack: {
+      tech1: 'Ruby on Rails',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+    },
     lorem: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     lorem1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    button: 'See live',
+    button1: 'See source',
   },
 ]
 
-let popupBtns = document.querySelectorAll('.pwin');
-console.log(popupBtns);
-let popupBtnsArray = Array.from(popupBtns);
-console.log('popupBtnsArray', popupBtnsArray);
-const popup = document.getElementById('popup');
-
-dataCards.forEach((card,i) => {
-  const temp = document.createElement('div');
-  temp.innerHTML = `
-  <div class='popupCont'><div><img src=${card.image}></div>
-  <div><img src=${card.image1}></div>
-  <h3>${card.heading}</h3>
-  <ul>
-  ${card.techStack.map((tech) => `<li>${tech}</li>`)}
-  </ul>
-  <p>${card.lorem}</p>
-  <p>${card.lorem1}</p></div>
+const mobileCards = (card) => `
+  <article class="mobile-cards">
+          <button type="button" class="btn-close">
+              <img src="./ImageP1/close-icon.png" alt="close icon">
+          </button>
+          <div class="card-image">
+              <img src=${dataCards[card].image} alt="">
+          </div>
+          <h2 class="card-heading">
+              ${dataCards[card].heading}
+          </h2>
+          <ul class="lang-list">
+              <li class="li-mobile">${dataCards[card].techStack.tech1}</li>
+              <li class="li-mobile">${dataCards[card].techStack.tech2}</li>
+              <li class="li-mobile">${dataCards[card].techStack.tech3}</li>
+          </ul>
+          <p class="card-para">
+            ${dataCards[card].lorem}
+          </p>
+          <div class="card-button">
+                  <button class="btn-live">
+                  <a href=${dataCards[card].linkLive} class='btn-live-source'>
+                  See live
+                  <img src="./ImageP1/icon-live.png" alt="">
+                  </a>
+                  </button>
+                  <button class="btn-source">
+                  <a href=${dataCards[card].linkSource} class='btn-live-source'>
+                  See source
+                  <img src="./ImageP1/icon-source.png" alt="">
+                  </a>
+                  </button>
+          </div>
+          <script src="index.js"></script>
+  </article>
   `;
-  popup.append(temp);
-})
+  const popupBtns = document.querySelectorAll('.pwin');
 
-const clicked = () => {
-  console.log('clicked');
-  popup.classList.remove('hidden');
-  popup.classList.add('visible');
-};
-
-popupBtnsArray.forEach((btn, i) => {
-  btn.addEventListener('click', clicked)
-})
-
-const popupConts = document.querySelectorAll('.popupCont');
-console.log('popupConts', popupConts);
-
-for(let i = 0; i < popupConts.length; i++) {
-  for( let j = 0; j < popupBtns.length; j++) {
-    popupBtns[i].onclick = function openPopup() {
-      popupConts[i].style.visibility = 'visible';
-    }
+  for (let i = 0; i < popupBtns.length; i++) {
+    popupBtns[i].addEventListener('click', () => {
+      const mobileCard = document.createElement('div');
+      mobileCard.innerHTML = mobileCards(i);
+      document.body.appendChild(mobileCard);
+      const btnClose = document.querySelector('.btn-close');
+      btnClose.addEventListener('click', async () => {
+        document.body.removeChild(mobileCard);
+      });
+    });
   }
-}
