@@ -102,7 +102,7 @@ const dataCards = [
     button: 'https://www.google.com',
     button1: 'https://github.com/bhekisile/',
   },
-]
+];
 
 const mobileCards = (card) => `
   <article class="mobile-cards">
@@ -141,16 +141,16 @@ const mobileCards = (card) => `
   </article>
   `;
   
-  const popupBtns = document.querySelectorAll('.pwin');
+const popupBtns = document.querySelectorAll('.pwin');
 
-  for (let i = 0; i < popupBtns.length; i++) {
-    popupBtns[i].addEventListener('click', () => {
-      const mobileCard = document.createElement('div');
-      mobileCard.innerHTML = mobileCards(i);
-      document.body.appendChild(mobileCard);
-      const btnClose = document.querySelector('.btn-close');
-      btnClose.addEventListener('click', async () => {
-        document.body.removeChild(mobileCard);
-      });
-    });
-  }
+for (let i = 0; i < popupBtns.length; i+=1) {
+popupBtns[i].addEventListener('click', () => {
+  const mobileCard = document.createElement('div');
+  mobileCard.innerHTML = mobileCards(i);
+  document.body.appendChild(mobileCard);
+  const btnClose = document.querySelector('.btn-close');
+  btnClose.addEventListener('click', async () => {
+  document.body.removeChild(mobileCard);
+});
+});
+}
