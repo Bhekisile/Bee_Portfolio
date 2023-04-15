@@ -15,6 +15,7 @@ getHam.addEventListener('click', clickMenu);
 
 const x = document.querySelector('#x');
 x.addEventListener('click', clickX);
+
 const dataCards = [
   {
     id: 1,
@@ -141,7 +142,7 @@ const mobileCards = (card) => `
   `;
 
 const popupBtns = document.querySelectorAll('.pwin');
-for (let i = 0; i < popupBtns.length; i+=1) {
+  for (let i = 0; i < popupBtns.length; i+=1) {
 popupBtns[i].addEventListener('click', () => {
 const mobileCard = document.createElement('div');
 mobileCard.innerHTML = mobileCards(i);
