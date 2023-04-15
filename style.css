@@ -606,7 +606,14 @@ form {
 }
 
 input:valid {
-  border: 2px solid #36b37f;
+  border: 2px solid transparent;
+}
+
+#error {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .img-bar {
@@ -743,6 +750,8 @@ input:valid {
   letter-spacing: 2px;
   padding: 1em 1.5em;
   color: white;
+=======
+
 }
 
 @media (min-width: 768px) {
@@ -781,8 +790,7 @@ input:valid {
     font-size: 1.5em;
     width: 100%;
   }
-  
-
+ 
 
   .lang-list {
     grid-column: 1 /-1;
@@ -1165,4 +1173,37 @@ input:valid {
   .two ul {
     margin-top: 40px;
   }
-}
+
+
+  
+  #badges {
+    display: flex;
+    gap: 8px !important;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  #js-p {
+    width: 99%;
+  }
+
+  #js-p2 {
+    width: 99%;
+  }
+
+  .btn-live {
+    margin-right: 178px;
+    margin-bottom: 317px;
+  }
+
+  #pop-x {
+    margin-top: -64px;
+    margin-left: 400px;
+    filter: grayscale(50%);
+  }
+
+  #popup img {
+    display: block;
+  }
+

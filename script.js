@@ -16,6 +16,7 @@ getHam.addEventListener('click', clickMenu);
 const x = document.querySelector('#x');
 x.addEventListener('click', clickX);
 
+
 const dataCards = [
   {
     id: 1,
@@ -154,3 +155,4 @@ const mobileCards = (card) => `
       });
     });
   }
+
