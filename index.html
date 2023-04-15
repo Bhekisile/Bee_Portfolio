@@ -75,7 +75,9 @@
                 <img src="./ImageP1/Indicator.png" alt="Indicator">
             </div>
             <main class="cards">
+
                 
+
                 <div class="card">
                     <div class="card-img">
                     </div>
@@ -91,9 +93,11 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
+
                         <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
                     </section>
                     
+
                 </div>
                 <div class="card">
                     <div class="card-img">
@@ -110,7 +114,9 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
+
                         <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
+
                     </section>
                 </div>
                 <div class="card">
@@ -128,7 +134,9 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
+
                         <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
+
                     </section>
                 </div>
                 <div class="card">
@@ -146,7 +154,9 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
+
                         <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
+
                     </section>
                 </div>
                 <div class="card">
@@ -163,7 +173,9 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
+
                         <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
+
                     </section>
                 </div>
                 <div class="card">
@@ -180,7 +192,9 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
+
                         <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
+
                     </section>
                 </div>
             </main>
@@ -249,18 +263,19 @@
                 <div class="flex-container">
                     <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
 
-                        <form action="https://formspree.io/f/mpznvgqj" method="post">
+                        <form id="form" action="https://formspree.io/f/mpznvgqj" method="post">
                             <div class="flex item1">
                                 <ul>
-                                    <li class="input-text"><input type="text" id="full-name" name="full-name" placeholder="Full name"
-                                            maxlength="30" required></li>
-                                            <li class="input-text"><input type="email" id="email-address" name="email-address" placeholder="Email address" required></li>
+                                    <li class="input-text"><input type="text" id="full-name" name="name" placeholder="Full name"
+                                            maxlength="30"></li>
+                                            <li class="input-text"><input type="email" id="email" name="email" placeholder="Email address"></li>
                                     <li class="text-area"><textarea type="textarea" id="comment" name="comment"
-                                            placeholder="Hey I'd like to connect to..." maxlength="500" required></textarea></li>
+                                            placeholder="Hey I'd like to connect to..." maxlength="500"></textarea></li>
                                 </ul>
                             </div>
                             <div class="flex item2">
                                 <button type="submit" class="btn button">Get in touch</button>
+                                <div id="error"></div>
                             </div>
                         </form>
                 </div>
