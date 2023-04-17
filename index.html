@@ -34,9 +34,8 @@
                     </ul>
                 </nav>
             </header>
-
                 <section class="background">
-
+                    
                     <header class="myheader">
                         <h1> <span class="blue">Hey there. <br class="break">
                                 I’m Alex. <br></span>
@@ -44,6 +43,7 @@
                                 developer</span>
                         </h1>
                     </header>
+
                     <article>
                         <p class="double">I can help you build a product , feature or website Look through some of my work and <br class="desktop"> experience! If
                             you like what you see and have a project you need coded, <br>
@@ -64,6 +64,7 @@
                     </div>
                 </section>
         </div>
+
         <section class="works" id="portfolio">
             <header>
                 <h2 class="work">My Recent <br class="break"> Works</h2>
@@ -72,24 +73,7 @@
                 <img src="./ImageP1/Indicator.png" alt="Indicator">
             </div>
             <main class="cards">
-                <section id="pop-outer">
-                    <img
-                      onclick="clickPopX()"
-                      id="pop-x"
-                      src="https://img.icons8.com/material-outlined/24/null/delete-sign.png"/>
-                    <div id="popup"></div>
-                    <div id="popup-content"></div>
-                    <ul id="badges"></ul>
-                    <div id="js-p"></div>
-                    <div id="js-p2"></div>
-                    <button class="btn btn-see btn-live">See live</button>
-                    <img
-                      id="ext"
-                      src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/external-link.png"
-                    />
-                    <button class="btn btn-see btn-source">See source</button>
-                    <img src="./ImageP1/github-w.png" alt="" id="g" />
-                  </section>
+                
                 <div class="card">
                     <div class="card-img">
                     </div>
@@ -105,9 +89,9 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
                     </section>
-                    <section id="pop-outer">
+                    <!--<section id="pop-outer">
                         <img
                           onclick="clickPopX()"
                           id="pop-x"
@@ -125,7 +109,7 @@
                         />
                         <button class="btn btn-see btn-source">See source</button>
                         <img src="./ImageP1/github@.png" alt="Github Logo" id="g" />
-                      </section>
+                      </section>-->
                 </div>
                 <div class="card">
                     <div class="card-img">
@@ -142,7 +126,7 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
                     </section>
                 </div>
                 <div class="card">
@@ -160,7 +144,7 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
                     </section>
                 </div>
                 <div class="card">
@@ -178,7 +162,7 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
                     </section>
                 </div>
                 <div class="card">
@@ -195,7 +179,7 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
                     </section>
                 </div>
                 <div class="card">
@@ -212,7 +196,7 @@
                                 <li class="html">HTML</li>
                             </ul>
                         </div>
-                        <a href="#pop-outer"><button type="button" class="btn pwin" onclick="pop()">See project</button></a>
+                        <a href="#pop-outer"><button type="button" class="btn pwin">See project</button></a>
                     </section>
                 </div>
             </main>
@@ -281,19 +265,18 @@
                 <div class="flex-container">
                     <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
 
-                        <form id="form" action="https://formspree.io/f/mpznvgqj" method="post">
+                        <form action="https://formspree.io/f/mpznvgqj" method="post">
                             <div class="flex item1">
                                 <ul>
-                                    <li class="input-text"><input type="text" id="full-name" name="name" placeholder="Full name"
-                                            maxlength="30"></li>
-                                            <li class="input-text"><input type="email" id="email" name="email" placeholder="Email address"></li>
+                                    <li class="input-text"><input type="text" id="full-name" name="full-name" placeholder="Full name"
+                                            maxlength="30" required></li>
+                                            <li class="input-text"><input type="email" id="email-address" name="email-address" placeholder="Email address" required></li>
                                     <li class="text-area"><textarea type="textarea" id="comment" name="comment"
-                                            placeholder="Hey I'd like to connect to..." maxlength="500"></textarea></li>
+                                            placeholder="Hey I'd like to connect to..." maxlength="500" required></textarea></li>
                                 </ul>
                             </div>
                             <div class="flex item2">
                                 <button type="submit" class="btn button">Get in touch</button>
-                                <div id="error"></div>
                             </div>
                         </form>
                 </div>
@@ -320,7 +303,9 @@
 
             </div>
         </section>
+        <div id="popup"></div>   
     </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
