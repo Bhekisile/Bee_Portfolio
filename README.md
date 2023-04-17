@@ -76,6 +76,7 @@ You can deploy this project using: Netlify
 
 👤 **Bhekisile Jozi**
    **Blesslin Jerish R**
+   **Chawki Mbarki**
 
 - GitHub: [@githubhandle](https://github.com/Bhekisile)
 
