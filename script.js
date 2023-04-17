@@ -17,7 +17,7 @@ x.addEventListener('click', clickX);
 const dataCards = [
   {
     id: 1,
-    image: './ImageP1/Snapshoot-Portfolio1.png',
+    image: './ImageP1/Snapshoot-Portfolio2.png',
     heading: 'Keeping track of hundreds of components',
     techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
@@ -35,7 +35,7 @@ const dataCards = [
   },
   {
     id: 3,
-    image: './ImageP1/Snapshoot-Portfolio1.png',
+    image: './ImageP1/Snapshoot-Portfolio2.png',
     heading: 'Keeping track of hundreds of components',
     techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
@@ -53,7 +53,7 @@ const dataCards = [
   },
   {
     id: 5,
-    image: './ImageP1/Snapshoot-Portfolio1.png',
+    image: './ImageP1/Snapshoot-Portfolio2.png',
     heading: 'Keeping track of hundreds of components',
     techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',

@@ -5,9 +5,9 @@ body {
   max-width: 100%;
 }
 
-body {
+/* body {
   text-align: center;
-}
+} */
 
 .container::-webkit-scrollbar {
   width: 0 !important;
@@ -336,6 +336,8 @@ h3 {
   font-size: 17px;
   line-height: 24px;
   border: none;
+  margin-left: 103px;
+  margin-right: 102px;
 }
 
 .side-background {
@@ -741,10 +743,10 @@ input:valid {
   line-height: 16px;  
 }
 
-#popup img {
+/* #popup img {
   display: block;
   max-width: 500px;
-}
+} */
 
 #popup {
   height: 836px;
@@ -771,16 +773,17 @@ input:valid {
   height: 220px;
 }
 
-.p-heading {
+.popupCont .p-heading {
   width: 259px;
   height: 135px;
-  text-align: left;
+  text-align: left !important;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px !important;
   line-height: 44px !important;
   background-color: #172b4d !important;
+  margin-left: 0;
 }
 
 .btn-close {
@@ -805,6 +808,7 @@ input:valid {
   line-height: 16px;
   color: #3a4a42;
   margin-left: 0;
+  padding-left: 0;
 }
 
 #popup ul li:nth-child(1) {
@@ -869,6 +873,9 @@ input:valid {
   width: 135px;
   height: 48px;
   background-color: #36b37f;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
 }
 
 .btn-live {
@@ -910,6 +917,60 @@ input:valid {
 
 
 @media (min-width: 768px) {
+
+  #popup {
+    background-color: #c1c7d0;
+    width: 100%;
+    height: 1100px;
+  }
+
+  .popupCont {
+    height: 882px;
+    width: 65%;
+    margin-top: 122px;
+    margin-left: 260px;
+    margin-right: 260px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 78px;
+    background-color: #fff;
+  }
+
+  .btn-close {
+    width: 20%;
+    height: 40px;
+    border: 1px solid purple;
+    margin-top: 24px;
+  }
+
+  .popupCont .img1 {
+    /* margin-top: 78px; */
+    text-align: center;
+    margin-bottom: 340px;
+    /* width: 872px;
+    height: 616px */
+  }
+
+  .popupCont .p-heading {
+    width: 65% !important;
+    height: 82px;
+    /* margin-top: 500px; */
+    margin-left: 0;
+    text-align: left;
+    background-color:red;
+  }
+
+  .text {
+    width: 65%;
+    height: 151px;
+    background-color: pink;
+
+  }
+
+  .card-button {
+    width:
+  }
+
   .container-bg {
     width: 100%;
     height: 3274px;
@@ -1260,22 +1321,6 @@ input:valid {
     margin-top: 40px;
   }
 
-  /* #pop-outer {
-    display: none; 
-  } */
-
-  /* #pop-outer {
-    height: 1083px;
-    width: 920px;
-    background-color: #fff;
-    border-radius: 16px;
-    padding: 16px;
-    margin-left: 16px;
-    padding-top: 100px;
-    position: absolute;
-    z-index: 9999;
-    border: 1px solid red;
-  } */
 
   #popup-content {
     font-size: 32px;
