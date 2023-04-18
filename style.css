@@ -401,6 +401,8 @@ h3 {
   margin-top: 38px;
   margin-bottom: 0;
   padding: 0;
+  margin-left: 59px;
+  margin-right: 59px;
 }
 
 h4 {
@@ -773,16 +775,16 @@ input:valid {
   height: 220px;
 }
 
-.popupCont .p-heading {
+.popupCont h3 {
   width: 259px;
   height: 135px;
-  text-align: left !important;
+  text-align: left;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px !important;
-  line-height: 44px !important;
-  background-color: #172b4d !important;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
   margin-left: 0;
 }
 
@@ -869,29 +871,32 @@ input:valid {
   justify-content: space-between;
 }
 
-.btn-1 {
-  width: 135px;
+.card-button button {
+  width: 145px;
   height: 48px;
   background-color: #36b37f;
   padding-left: 0;
   padding-right: 0;
   border: 0;
-}
-
-.btn-live {
-  text-decoration: none; 
-  display: flex;
-}
-
-.live-text {
-  width: 67px;
-  height: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+  border-radius: 4px;
+}
+
+.btn-live {
+  text-decoration: none; 
+  display: flex;
+  border: 1px solid blue;
+}
+
+.live-text {
+  width: 67px;
+  height: 24px;
+  border: 1px solid blue;
 }
 
 .card-button img:nth-child(1) {
@@ -899,7 +904,7 @@ input:valid {
   height: 18px;
 }
 
-.btn-2 {
+.card-button .btn-2 {
   width: 156px;
   height: 48px;
   background-color: #36b37f;
@@ -926,8 +931,8 @@ input:valid {
 
   .popupCont {
     height: 882px;
-    width: 65%;
-    margin-top: 122px;
+    width: 70%;
+    margin-top: 58px;
     margin-left: 260px;
     margin-right: 260px;
     padding-left: 24px;
@@ -937,38 +942,47 @@ input:valid {
   }
 
   .btn-close {
-    width: 20%;
+    width: 40px;
     height: 40px;
     border: 1px solid purple;
-    margin-top: 24px;
+    margin-top: 0;
+    position: relative;
+    /* float: right; */
+    margin-left: 85%;
+    bottom: -130px;
   }
 
   .popupCont .img1 {
     /* margin-top: 78px; */
     text-align: center;
-    margin-bottom: 340px;
-    /* width: 872px;
-    height: 616px */
+    /* margin-bottom: 340px; */
+    width: 65%;
+    height: 616px
   }
 
-  .popupCont .p-heading {
-    width: 65% !important;
+  .popupCont h3 {
+    width: 65%;
     height: 82px;
-    /* margin-top: 500px; */
     margin-left: 0;
     text-align: left;
-    background-color:red;
   }
 
-  .text {
-    width: 65%;
+  .popupCont .text {
+    width: 100%;
     height: 151px;
-    background-color: pink;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
 
   }
 
   .card-button {
-    width:
+    border-radius: 8px;
+    /* position: absolute; */
+    float: right;
+    margin-top: -290px;
   }
 
   .container-bg {
@@ -1123,6 +1137,11 @@ input:valid {
     height: 1080px;
     margin-left: 135px;
     margin-right: 134px;
+  }
+
+  .resume .btn {
+    margin-left: 40%;
+    margin-right: 40%;
   }
 
   header .work {
@@ -1361,10 +1380,17 @@ input:valid {
     margin-left: 400px;
     filter: grayscale(50%)
   }
-  #popup img {
+  .popupCont .img1 {
     display: block;
     width: 98%;
     min-width: 768px;
+    height: 500px;
+    
+  }
+
+  .pop-img {
+    width: 100%;
+    height: 500px;
   }
 
 

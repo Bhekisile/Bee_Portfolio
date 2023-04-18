@@ -1,5 +1,5 @@
 const menu = document.getElementById('ham-menu');
-const ham = document.getElementById('menu');
+// const ham = document.getElementById('menu');
 function clickMenu() {
   menu.style.display = 'block';
 }
@@ -17,7 +17,7 @@ x.addEventListener('click', clickX);
 const dataCards = [
   {
     id: 1,
-    image: './ImageP1/Snapshoot-Portfolio2.png',
+    image: './ImageP1/Snapshoot-Portfolio1.png',
     heading: 'Keeping track of hundreds of components',
     techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
@@ -35,7 +35,7 @@ const dataCards = [
   },
   {
     id: 3,
-    image: './ImageP1/Snapshoot-Portfolio2.png',
+    image: './ImageP1/Snapshoot-Portfolio1.png',
     heading: 'Keeping track of hundreds of components',
     techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
@@ -53,7 +53,7 @@ const dataCards = [
   },
   {
     id: 5,
-    image: './ImageP1/Snapshoot-Portfolio2.png',
+    image: './ImageP1/Snapshoot-Portfolio1.png',
     heading: 'Keeping track of hundreds of components',
     techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
@@ -82,8 +82,8 @@ dataCards.forEach((card,i) => {
   temp.innerHTML = `
   <img class='btn-close' src='./ImageP1/close-iconw.png' alt''>
   <div class='popupCont'>
-  <div class='img1'><img src=${card.image}></div>
-  <h3 class==p-heading>${card.heading}</h3>
+  <div class='img1'><img class='pop-img' src=${card.image}></div>
+  <h3>${card.heading}</h3>
   <ul>
   ${card.techStack.map((tech) => `<li>${tech}</li>`)}
   </ul>
@@ -126,4 +126,12 @@ for(let i = 0; i < popupConts.length; i++) {
       popupConts[i].style.visibility = 'visible';
     }
   }
+}
+
+const btnClose = document.querySelector('.btn-close');
+btnClose.addEventListener('click', closePopup )
+
+function closePopup() {
+  popupConts.style.display = 'hidden';
+  console.log('clicked');
 }
