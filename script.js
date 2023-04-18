@@ -1,5 +1,4 @@
 const menu = document.getElementById('ham-menu');
-// const ham = document.getElementById('menu');
 function clickMenu() {
   menu.style.display = 'block';
 }
@@ -19,7 +18,7 @@ const dataCards = [
     id: 1,
     image: './ImageP1/Snapshoot-Portfolio1.png',
     heading: 'Keeping track of hundreds of components',
-    techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     linkLiveVersion: 'https://www.google.com',
     linkSource: 'https://github.com/bhekisile/',
@@ -37,7 +36,7 @@ const dataCards = [
     id: 3,
     image: './ImageP1/Snapshoot-Portfolio1.png',
     heading: 'Keeping track of hundreds of components',
-    techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     linkLiveVersion: 'https://www.google.com',
     linkSource: 'https://github.com/bhekisile/',
@@ -55,7 +54,7 @@ const dataCards = [
     id: 5,
     image: './ImageP1/Snapshoot-Portfolio1.png',
     heading: 'Keeping track of hundreds of components',
-    techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     linkLiveVersion: 'https://www.google.com',
     linkSource: 'https://github.com/bhekisile/',
@@ -119,19 +118,35 @@ popupBtnsArray.forEach((btn, i) => {
 
 const popupConts = document.querySelectorAll('.popupCont');
 console.log('popupConts', popupConts);
-
+const closeBtns = document.querySelectorAll('.btn-close');
 for(let i = 0; i < popupConts.length; i++) {
   for( let j = 0; j < popupBtns.length; j++) {
     popupBtns[i].onclick = function openPopup() {
       popupConts[i].style.visibility = 'visible';
     }
+    closeBtns[i].onclick = function closePopup() {
+      popupConts[i].style.visibility = 'hidden';
+      console.log('closing popup');
+    }
   }
 }
 
-const btnClose = document.querySelector('.btn-close');
-btnClose.addEventListener('click', closePopup )
 
-function closePopup() {
-  popupConts.style.display = 'hidden';
-  console.log('clicked');
-}
+
+// function closePopup() {
+  
+//   popupConts.style.display = 'none';
+//   console.log('closing popup');
+// }
+// // const closeBtns = document.querySelectorAll('.btn-close');
+// closeBtns.forEach((btn) => {
+//   btn.addEventListener('click', closePopup );
+// })
+
+// for (i=0; i < closeBtns.length; i++) {
+//   console.log(popupConts[i]);
+//   closeBtns[i].onclick = function closePopup() {
+//     popupConts[i].style.visibility = 'hidden';
+//     console.log('closing popup');
+//   }
+// }

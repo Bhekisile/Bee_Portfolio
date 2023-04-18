@@ -754,8 +754,9 @@ input:valid {
   height: 836px;
   width: 90%;
   position: absolute;
-  z-index: 99;
+  /* z-index: 99; */
   padding: 16px;
+  top: 0;
 }
 
 .visible {
@@ -822,8 +823,7 @@ input:valid {
   align-items: center;
   justify-content: center;
   margin-left: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 10px;
 }
 
 #popup ul li:nth-child(2) {
@@ -835,8 +835,7 @@ input:valid {
   align-items: center;
   justify-content: center;
   margin-left: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 5px;
 }
 
 #popup ul li:nth-child(3) {
@@ -848,8 +847,19 @@ input:valid {
   align-items: center;
   justify-content: center;
   margin-left: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px;
+}
+
+#popup ul li:nth-child(4) {
+  width: 89px;
+  height: 32px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #ebf0ee;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  padding: 8px;
 }
 
 .popupCont .text {
@@ -872,11 +882,11 @@ input:valid {
 }
 
 .card-button button {
-  width: 145px;
+  width: fit-content;
   height: 48px;
   background-color: #36b37f;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   border: 0;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -885,6 +895,9 @@ input:valid {
   line-height: 24px;
   color: #fff;
   border-radius: 4px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .btn-live {
@@ -926,17 +939,19 @@ input:valid {
   #popup {
     background-color: #c1c7d0;
     width: 100%;
-    height: 1100px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 2100px;
   }
 
   .popupCont {
     height: 882px;
     width: 70%;
     margin-top: 58px;
-    margin-left: 260px;
-    margin-right: 260px;
-    padding-left: 24px;
-    padding-right: 24px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-left: 20px;
+    padding-right: 16px;
     padding-top: 78px;
     background-color: #fff;
   }
@@ -947,15 +962,12 @@ input:valid {
     border: 1px solid purple;
     margin-top: 0;
     position: relative;
-    /* float: right; */
     margin-left: 85%;
     bottom: -130px;
   }
 
   .popupCont .img1 {
-    /* margin-top: 78px; */
     text-align: center;
-    /* margin-bottom: 340px; */
     width: 65%;
     height: 616px
   }
@@ -980,9 +992,46 @@ input:valid {
 
   .card-button {
     border-radius: 8px;
-    /* position: absolute; */
+    width: 33%;
     float: right;
     margin-top: -290px;
+    margin-right: 16px;
+  }
+
+  #popup ul li:nth-child(4) {
+    width: 89px;
+    height: 32px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #ebf0ee;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    padding: 8px;
+  }
+
+  #popup ul li:nth-child(5) {
+    width: 89px;
+    height: 32px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #ebf0ee;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    padding: 8px;
+  }
+
+  #popup ul li:nth-child(6) {
+    width: 89px;
+    height: 32px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #ebf0ee;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    padding: 8px;
   }
 
   .container-bg {
