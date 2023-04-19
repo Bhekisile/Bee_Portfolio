@@ -79,42 +79,7 @@ const popup = document.getElementById('popup');
 dataCards.forEach((card,i) => {
   const temp = document.createElement('div');
   temp.innerHTML = `
-  <img class='btn-close' src='./ImageP1/close-iconw.png' alt''>
-  <div class='popupCont'>
-  <div class='img1'><img class='pop-img' src=${card.image}></div>
-  <h3>${card.heading}</h3>
-  <ul>
-  ${card.techStack.map((tech) => `<li>${tech}</li>`)}
-  </ul>
-  <div class='text'>${card.description}</div>
-  <div class="card-button">
-        <button class='btn-1>
-          <a href=${card.linkLiveVersion} class="btn-live">
-            <span class='live-text'>See live</span>
-            <img src="./ImageP1/live-icon.png" alt="see live icon">
-          </a>
-        </button>
-        <button class='btn-2>
-          <a href=${card.linkSource} class="btn-source">
-            <span class='live-text'>See source</span>
-            <img src="./ImageP1/github-w.png" alt="see github icon">
-          </a>
-        </button>
-  </div>
-  </div>
-  `;
-  popup.append(temp);
-})
-
-const clicked = () => {
-  console.log('clicked');
-  popup.classList.remove('hidden');
-  popup.classList.add('visible');
-};
-
-popupBtnsArray.forEach((btn, i) => {
-  btn.addEventListener('click', clicked)
-})
+  
 
 const popupConts = document.querySelectorAll('.popupCont');
 console.log('popupConts', popupConts);
@@ -130,23 +95,3 @@ for(let i = 0; i < popupConts.length; i++) {
     }
   }
 }
-
-
-
-// function closePopup() {
-  
-//   popupConts.style.display = 'none';
-//   console.log('closing popup');
-// }
-// // const closeBtns = document.querySelectorAll('.btn-close');
-// closeBtns.forEach((btn) => {
-//   btn.addEventListener('click', closePopup );
-// })
-
-// for (i=0; i < closeBtns.length; i++) {
-//   console.log(popupConts[i]);
-//   closeBtns[i].onclick = function closePopup() {
-//     popupConts[i].style.visibility = 'hidden';
-//     console.log('closing popup');
-//   }
-// }
