@@ -829,7 +829,7 @@ input:valid {
   align-items: center;
   justify-content: center;
   margin-left: 0;
-  padding: 8px 10px;
+  padding: 8px 7px;
 }
 
 #popup ul li:nth-child(2) {
@@ -881,7 +881,7 @@ input:valid {
 }
 
 .card-button {
-  width: 311px;
+  min-width: 311px;
   height: 56px;
   display: flex;
   justify-content: space-between;
