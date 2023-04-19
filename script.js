@@ -76,7 +76,7 @@ const popupBtnsArray = Array.from(popupBtns);
 // console.log('popupBtnsArray', popupBtnsArray);
 const popup = document.getElementById('popup');
 
-dataCards.forEach((card, i) => {
+dataCards.forEach((card) => {
   const temp = document.createElement('div');
   temp.innerHTML = `
   
@@ -119,8 +119,8 @@ popupBtnsArray.forEach((btn) => {
 const popupConts = document.querySelectorAll('.popupCont');
 // console.log('popupConts', popupConts);
 const closeBtns = document.querySelectorAll('.btn-close');
-for (let i = 0; i < popupConts.length; i+=1) {
-  for (let j = 0; j < popupBtns.length; j+=1) {
+for (let i = 0; i < popupConts.length; i += 1) {
+  for (let j = 0; j < popupBtns.length; j += 1) {
     popupBtns[i].onclick = function openPopup() {
       popupConts[i].style.visibility = 'visible';
     };
@@ -128,5 +128,5 @@ for (let i = 0; i < popupConts.length; i+=1) {
       popupConts[i].style.visibility = 'hidden';
       // console.log('closing popup');
     };
-  };
-};
+  }
+}

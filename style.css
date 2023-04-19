@@ -718,7 +718,6 @@ input:valid {
   justify-content: center;
   margin-left: 0;
   padding: 8px 7px;
-  padding: 8px 7px;
 }
 
 #popup ul li:nth-child(2) {
@@ -821,7 +820,7 @@ input:valid {
 .card-button img:nth-child(2) {
   width: 18px;
   height: 20px;
-}  
+}
 
 @media (min-width: 768px) {
   #popup {
@@ -832,7 +831,7 @@ input:valid {
     position: absolute;
     top: 0;
     bottom: 0;
-    background-color:#c1c7d0;
+    background-color: #c1c7d0;
   }
 
   .popupCont {
@@ -852,7 +851,6 @@ input:valid {
     position: relative;
     font-size: 30px;
     margin-left: 92%;
-    color: #67798e;
     color: #67798e;
     background-color: #ebecf0;
   }
@@ -1272,7 +1270,6 @@ input:valid {
     margin-top: 40px;
   }
 
-
   #popup-content {
     font-size: 32px;
     font-weight: 600;
@@ -1293,9 +1290,7 @@ input:valid {
     margin-top: -64px;
     margin-left: 400px;
     filter: grayscale(50%);
-    filter: grayscale(50%);
   }
-
 
   .pop-img {
     width: 100%;
