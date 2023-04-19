@@ -5,9 +5,9 @@ body {
   max-width: 100%;
 }
 
-/* body {
+body {
   text-align: center;
-} */
+}
 
 .container::-webkit-scrollbar {
   width: 0 !important;
@@ -644,7 +644,7 @@ input:valid {
   text-align: left;
 }
 
-#badges {
+/* #badges {
   display: flex;
   gap: 8px !important;
   margin-left: -37px;
@@ -688,7 +688,7 @@ input:valid {
   line-height: 24px;
   text-align: left;
   width: 311px;
-}
+} */
 
 .btn-live {
   width: 135px;
@@ -723,9 +723,9 @@ input:valid {
   filter: brightness(0) invert(1);
 }
 
-.pop2 {
+/* .pop2 {
   display: none;
-}
+} */
 
 .skills {
   display: flex;
@@ -909,14 +909,14 @@ input:valid {
 .btn-live {
   text-decoration: none; 
   display: flex;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
-.live-text {
+/* .live-text {
   width: 67px;
   height: 24px;
   border: 1px solid blue;
-}
+} */
 
 .card-button img:nth-child(1) {
   width: 18px;
@@ -943,14 +943,15 @@ input:valid {
 @media (min-width: 768px) {
 
   #popup {
-    width: 100%;
-    height: fit-content;
+    width: 100vw;
     left: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
+    /* z-index: 1; */
+    min-height: 100vh;
     top: 0;
     bottom: 0;
-    outline: 9999px solid #c1c7d0;
+    /* outline: 9999px solid #c1c7d0; */
     /* visibility: hidden; */
     /* overflow-y: scroll; */
   }
@@ -986,9 +987,10 @@ input:valid {
   }
 
   .popupCont .img1 {
-    text-align: center;
-    width: 65%;
-    height: 616px
+    display: block;
+    width: 98%;
+    min-width: 768px;
+    height: 500px;
   }
 
   .popupCont h3 {
@@ -1421,10 +1423,10 @@ input:valid {
     border: 1px solid red;
   }
 
-  #badges {
+  /* #badges {
     display: flex;
     gap: 8px !important;
-    /*margin-left: -37px;*/
+    /*margin-left: -37px;
     list-style: none;
     height: 32px;
     width: 70%;
@@ -1447,14 +1449,7 @@ input:valid {
     margin-top: -64px;
     margin-left: 400px;
     filter: grayscale(50%)
-  }
-  .popupCont .img1 {
-    display: block;
-    width: 98%;
-    min-width: 768px;
-    height: 500px;
-    
-  }
+  } */
 
   .pop-img {
     width: 100%;
