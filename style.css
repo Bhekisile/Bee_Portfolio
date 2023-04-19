@@ -718,6 +718,7 @@ input:valid {
   justify-content: center;
   margin-left: 0;
   padding: 8px 7px;
+  padding: 8px 7px;
 }
 
 #popup ul li:nth-child(2) {
@@ -851,6 +852,7 @@ input:valid {
     position: relative;
     font-size: 30px;
     margin-left: 92%;
+    color: #67798e;
     color: #67798e;
     background-color: #ebecf0;
   }
@@ -1291,7 +1293,9 @@ input:valid {
     margin-top: -64px;
     margin-left: 400px;
     filter: grayscale(50%);
+    filter: grayscale(50%);
   }
+
 
   .pop-img {
     width: 100%;
