@@ -573,6 +573,7 @@ form .flex .item2 {
   margin-bottom: 30px;
   text-align: center;
   justify-content: center;
+  margin-right: 80px;
 }
 
 .email {
@@ -1250,8 +1251,10 @@ input:valid {
   }
 
   .button {
+
     margin-left: 24px;
     width: 115px;
+
     height: 48px;
     text-align: center;
   }
