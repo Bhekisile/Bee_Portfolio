@@ -71,9 +71,7 @@ const dataCards = [
 ];
 
 const popupBtns = document.querySelectorAll('.pwin');
-// console.log(popupBtns);
 const popupBtnsArray = Array.from(popupBtns);
-// console.log('popupBtnsArray', popupBtnsArray);
 const popup = document.getElementById('popup');
 
 dataCards.forEach((card) => {
@@ -108,16 +106,13 @@ dataCards.forEach((card) => {
   popup.append(temp);
 });
 const clicked = () => {
-  // console.log('clicked');
   popup.classList.remove('hidden');
   popup.classList.add('visible');
-  // popup.style.visibility = 'visible';
 };
 popupBtnsArray.forEach((btn) => {
   btn.addEventListener('click', clicked);
 });
 const popupConts = document.querySelectorAll('.popupCont');
-// console.log('popupConts', popupConts);
 const closeBtns = document.querySelectorAll('.btn-close');
 for (let i = 0; i < popupConts.length; i += 1) {
   for (let j = 0; j < popupBtns.length; j += 1) {
@@ -126,7 +121,37 @@ for (let i = 0; i < popupConts.length; i += 1) {
     };
     closeBtns[i].onclick = function closePopup() {
       popupConts[i].style.visibility = 'hidden';
-      // console.log('closing popup');
     };
   }
+}
+
+//Form validation
+function formValidation() {
+const name = document.form.name.value;
+const error = document.getElementById('error');
+const email = document.form.email.value;
+const comment = document.form.comment.value;
+const errorMessages = [];
+  if (name.trim() == '') {
+    errorMessages.push('Name is required');
+    // return false;
+    }
+  else if (email.trim() == '') {
+    errorMessages.push('Email is required');
+    // return false;
+  } 
+  else if (email !== email.toLowerCase()) {
+    errorMessages.push('Email must be in lowercase');
+    // return false;
+  }
+  else if (comment.trim() == '') {
+    errorMessages.push('Message is required');
+    // return false;
+  }
+  if (errorMessages.length > 0) {
+    event.preventDefault();
+    error.textContent = errorMessages.join('.');
+  } else {
+    error.textContent = '';
+}
 }
