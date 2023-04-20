@@ -146,7 +146,7 @@ function formValidation() {
     error.textContent = errorMessages.join('.');
     return false;
   }
-    error.textContent = '';
-    return true;
+  error.textContent = '';
+  return true;
 }
 formValidation();
