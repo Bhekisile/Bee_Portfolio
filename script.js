@@ -77,7 +77,7 @@ const popup = document.getElementById('popup');
 dataCards.forEach((card) => {
   const temp = document.createElement('div');
   temp.innerHTML = `
-  
+  <div id='overlay'>
   <div class='popupCont'>
   <button class='btn-close'>&times;</button>
   <div class='img1'><img class='pop-img' src=${card.image}></div>
@@ -100,7 +100,7 @@ dataCards.forEach((card) => {
           </a>
         </button>
   </div>
-  <div id='overlay'></div>
+  </div>
   </div>
   `;
   popup.append(temp);
@@ -150,3 +150,5 @@ function formValidation() {
   return true;
 }
 formValidation();
+
+// Local Storage
