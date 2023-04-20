@@ -19,7 +19,7 @@ const dataCards = [
     image: './ImageP1/Snapshoot-Portfolio1.png',
     heading: 'Keeping track of hundreds of components',
     techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     linkLiveVersion: 'https://www.google.com',
     linkSource: 'https://github.com/bhekisile/',
   },
@@ -37,7 +37,7 @@ const dataCards = [
     image: './ImageP1/Snapshoot-Portfolio1.png',
     heading: 'Keeping track of hundreds of components',
     techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     linkLiveVersion: 'https://www.google.com',
     linkSource: 'https://github.com/bhekisile/',
   },
@@ -55,7 +55,7 @@ const dataCards = [
     image: './ImageP1/Snapshoot-Portfolio1.png',
     heading: 'Keeping track of hundreds of components',
     techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     linkLiveVersion: 'https://www.google.com',
     linkSource: 'https://github.com/bhekisile/',
   },
@@ -108,6 +108,8 @@ dataCards.forEach((card) => {
 const clicked = () => {
   popup.classList.remove('hidden');
   popup.classList.add('visible');
+  overlay.classList.remove('hidden');
+  overlay.classList.add('visible');
 };
 popupBtnsArray.forEach((btn) => {
   btn.addEventListener('click', clicked);
