@@ -134,19 +134,15 @@ const comment = document.form.comment.value;
 const errorMessages = [];
   if (name.trim() == '') {
     errorMessages.push('Name is required');
-    // return false;
     }
   else if (email.trim() == '') {
     errorMessages.push('Email is required');
-    // return false;
   } 
   else if (email !== email.toLowerCase()) {
     errorMessages.push('Email must be in lowercase');
-    // return false;
   }
   else if (comment.trim() == '') {
     errorMessages.push('Message is required');
-    // return false;
   }
   if (errorMessages.length > 0) {
     event.preventDefault();
