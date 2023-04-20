@@ -108,8 +108,10 @@ dataCards.forEach((card) => {
 const clicked = () => {
   popup.classList.remove('hidden');
   popup.classList.add('visible');
+
   overlay.classList.remove('hidden');
   overlay.classList.add('visible');
+
 };
 popupBtnsArray.forEach((btn) => {
   btn.addEventListener('click', clicked);
@@ -126,3 +128,29 @@ for (let i = 0; i < popupConts.length; i += 1) {
     };
   }
 }
+
+// Form validation
+function formValidation() {
+  const name = document.form.name.value;
+  const error = document.getElementById('error');
+  const email = document.form.email.value;
+  const comment = document.form.comment.value;
+  const errorMessages = [];
+
+  if (name.trim() === '') {
+    errorMessages.push('Name is required');
+  } else if (email.trim() === '') {
+    errorMessages.push('Email is required');
+  } else if (email !== email.toLowerCase()) {
+    errorMessages.push('Email must be in lowercase');
+  } else if (comment.trim() === '') {
+    errorMessages.push('Message is required');
+  }
+  if (errorMessages.length > 0) {
+    error.textContent = errorMessages.join('.');
+    return false;
+  }
+  error.textContent = '';
+  return true;
+}
+formValidation();
