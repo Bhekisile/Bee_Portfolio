@@ -134,6 +134,17 @@ const comment = document.form.comment.value;
 const errorMessages = [];
   if (name.trim() == '') {
     errorMessages.push('Name is required');
-    }
+  }else if (email.trim() == '') {
+    errorMessages.push('Email is required');
+  }else if (email !== email.toLowerCase()) {
+    errorMessages.push('Email must be in lowercase');
+  }else if (comment.trim() == '') {
+    errorMessages.push('Message is required');
+  }if (errorMessages.length > 0) {
+    event.preventDefault();
+    error.textContent = errorMessages.join('.');
+  }else {
+    error.textContent = '';
+}
   
 }
