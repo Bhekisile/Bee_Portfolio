@@ -71,9 +71,7 @@ const dataCards = [
 ];
 
 const popupBtns = document.querySelectorAll('.pwin');
-// console.log(popupBtns);
 const popupBtnsArray = Array.from(popupBtns);
-// console.log('popupBtnsArray', popupBtnsArray);
 const popup = document.getElementById('popup');
 
 dataCards.forEach((card) => {
@@ -108,16 +106,13 @@ dataCards.forEach((card) => {
   popup.append(temp);
 });
 const clicked = () => {
-  // console.log('clicked');
   popup.classList.remove('hidden');
   popup.classList.add('visible');
-  // popup.style.visibility = 'visible';
 };
 popupBtnsArray.forEach((btn) => {
   btn.addEventListener('click', clicked);
 });
 const popupConts = document.querySelectorAll('.popupCont');
-// console.log('popupConts', popupConts);
 const closeBtns = document.querySelectorAll('.btn-close');
 for (let i = 0; i < popupConts.length; i += 1) {
   for (let j = 0; j < popupBtns.length; j += 1) {
@@ -126,7 +121,6 @@ for (let i = 0; i < popupConts.length; i += 1) {
     };
     closeBtns[i].onclick = function closePopup() {
       popupConts[i].style.visibility = 'hidden';
-      // console.log('closing popup');
     };
   }
 }
