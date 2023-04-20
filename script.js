@@ -131,7 +131,9 @@ function formValidation() {
   const error = document.getElementById('error');
   const email = document.form.email.value;
   const comment = document.form.comment.value;
+  const getTouch = document.getElementById('getTouch');
   const errorMessages = [];
+
   if (name.trim() === '') {
     errorMessages.push('Name is required');
   } else if (email.trim() === '') {
@@ -140,11 +142,13 @@ function formValidation() {
     errorMessages.push('Email must be in lowercase');
   } else if (comment.trim() === '') {
     errorMessages.push('Message is required');
-  } if (errorMessages.length > 0) {
-    e.preventDefault();
+  } 
+  if (errorMessages.length > 0) {
     error.textContent = errorMessages.join('.');
+    return false;
   } else {
     error.textContent = '';
+    return true;
+  }
 }
-}
-formValidation()
+formValidation();
