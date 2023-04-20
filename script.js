@@ -125,26 +125,26 @@ for (let i = 0; i < popupConts.length; i += 1) {
   }
 }
 
-//Form validation
+// Form validation
 function formValidation() {
-const name = document.form.name.value;
-const error = document.getElementById('error');
-const email = document.form.email.value;
-const comment = document.form.comment.value;
-const errorMessages = [];
-  if (name.trim() == '') {
+  const name = document.form.name.value;
+  const error = document.getElementById('error');
+  const email = document.form.email.value;
+  const comment = document.form.comment.value;
+  const errorMessages = [];
+  if (name.trim() === '') {
     errorMessages.push('Name is required');
-  }else if (email.trim() == '') {
+  } else if (email.trim() === '') {
     errorMessages.push('Email is required');
-  }else if (email !== email.toLowerCase()) {
+  } else if (email !== email.toLowerCase()) {
     errorMessages.push('Email must be in lowercase');
-  }else if (comment.trim() == '') {
+  } else if (comment.trim() === '') {
     errorMessages.push('Message is required');
-  }if (errorMessages.length > 0) {
-    event.preventDefault();
+  } if (errorMessages.length > 0) {
+    e.preventDefault();
     error.textContent = errorMessages.join('.');
-  }else {
+  } else {
     error.textContent = '';
 }
-  
 }
+formValidation()
