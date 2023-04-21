@@ -905,7 +905,22 @@ input:valid {
     overflow-y: auto;
   }
 
- 
+  .popupCont {
+    width: 1000px;
+    overflow-y: auto;
+    max-width: 80%;
+    position: fixed;
+    transition: 200ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
+    padding-left: 20px;
+    padding-right: 12px;
+    padding-top: 0;
+    z-index: 99;
+    background-color: #fff;
+    height: 96vh;
+  }
 
   #popup {
     width: 100%;
