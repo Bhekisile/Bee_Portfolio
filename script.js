@@ -123,7 +123,11 @@ for (let i = 0; i < popupConts.length; i+=1) {
       popupConts[i].classList.remove('hidden')
       popupConts[i].classList.add('visible')
     };
-    
+    closeBtns[i].onclick = function closePopup() {
+      popupConts[i].style.visibility = 'hidden';
+      popupConts[i].classList.remove('visible')
+      popupConts[i].classList.add('hidden')
+      overlay.style.visibility = 'hidden';
     };
   };
 };
