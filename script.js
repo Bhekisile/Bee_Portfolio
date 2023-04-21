@@ -108,7 +108,6 @@ dataCards.forEach((card) => {
 const clicked = () => {
   popup.classList.remove('hidden');
   popup.classList.add('visible');
-
 };
 popupBtnsArray.forEach((btn) => {
   btn.addEventListener('click', clicked);

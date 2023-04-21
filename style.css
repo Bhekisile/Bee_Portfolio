@@ -819,7 +819,7 @@ input:valid {
     background-color: #c1c7d0;
     position: fixed;
     opacity: 50%;
-    top: 0px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -1262,10 +1262,8 @@ input:valid {
   }
 
   .button {
-
     margin-left: 24px;
     width: 115px;
-
     height: 48px;
     text-align: center;
   }
@@ -1316,6 +1314,4 @@ input:valid {
     margin-left: 400px;
     filter: grayscale(50%);
   }
-
- 
 }
