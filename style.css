@@ -641,14 +641,9 @@ input:valid {
   justify-content: space-between;
 }
 
-/* .btn-live a {
-  text-decoration: none;
-  display: flex;
-} */
-
 .btn-source {
   width: 156px;
-  font-size: 15px;
+  font-size: 16px;
   text-decoration: none; 
   display: flex;
   justify-content: space-between;
@@ -861,18 +856,12 @@ input:valid {
 }
 
 .btn-1 .live-text {
-  margin-top: 318px;
+  margin-top: 3px;
 }
 
 .btn-1 img {
-  margin-top: 318px;
+  margin-top: 3px;
 }
-
-.btn-live {
-  display: flex;
-  justify-content: space-between;
-}
-
 
 .card-button img:nth-child(1) {
   width: 18px;
@@ -972,6 +961,14 @@ input:valid {
     float: right;
     margin-top: -290px;
     margin-right: 16px;
+  }
+
+  .btn-1 .live-text {
+    margin-top: 318px;
+  }
+
+  .btn-1 img {
+    margin-top: 318px;
   }
 
   .flex-icons li {
@@ -1366,7 +1363,6 @@ input:valid {
   .two ul {
     margin-top: 40px;
   }
-
 
   #popup-content {
     font-size: 32px;
