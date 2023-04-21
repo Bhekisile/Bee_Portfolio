@@ -152,6 +152,9 @@ function formValidation() {
 formValidation();
 
 // Local Storage
+const email = document.form.email.value;
+const name = document.form.name.value;
+const comment = document.form.comment.value;
 let inputData = {};
 if (localStorage.savedForm) {
   inputData = JSON.parse(localStorage.getItem('savedForm'));
