@@ -225,6 +225,7 @@ h1 {
   width: 327px;
   height: 48px;
   margin-left: 27px;
+  text-align: center;
 }
 
 /* Cards */
@@ -572,7 +573,6 @@ form .flex .item2 {
   margin-bottom: 30px;
   text-align: center;
   justify-content: center;
-  margin-right: 80px;
 }
 
 .email {
@@ -614,16 +614,6 @@ input:valid {
   justify-content: center;
 }
 
-/* #pop-outer {
-  height: 836px;
-  width: 375px;
-  width: max-content;
-  border-radius: 16px;
-  padding: 16px;
-  margin-left: 16px;
-  margin-top: 200px;
-} */
-
 #popup-content {
   font-size: 32px;
   font-weight: 600;
@@ -638,6 +628,73 @@ input:valid {
 #popup-content h1 {
   margin-left: 0;
   text-align: left;
+}
+
+.btn-live {
+  width: 115px;
+  margin-right: 18px;
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 0;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+/* .btn-live a {
+  text-decoration: none;
+  display: flex;
+} */
+
+.btn-source {
+  width: 156px;
+  font-size: 15px;
+  text-decoration: none; 
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+#ext {
+  height: 24px;
+  position: absolute;
+  margin-left: -55px;
+  margin-top: 11px;
+}
+
+#g {
+  position: absolute;
+  margin-top: 13px;
+  margin-left: -30px;
+}
+
+#pop-x {
+  margin-top: 16px;
+  margin-left: 117px;
+  position: absolute;
+  filter: brightness(0) invert(1);
+}
+
+.pop2 {
+  display: none;
+}
+
+.skills {
+  display: flex;
+  margin-top: 60px;
+}
+
+.skill {
+  width: 340px;
+  height: 345px;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 #popup {
@@ -774,10 +831,11 @@ input:valid {
   height: 56px;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .card-button button {
-  width: fit-content;
+  max-width: 155px;
   height: 48px;
   background-color: #36b37f;
   padding-left: 15px;
@@ -795,17 +853,25 @@ input:valid {
   align-items: center;
 }
 
-.btn-live {
-  text-decoration: none;
-  display: flex;
-  border: 1px solid blue;
+.live-text {
+  width: 86px;
+  height: 24px;
+  color: white;
 }
 
-.live-text {
-  width: 67px;
-  height: 24px;
-  border: 1px solid blue;
+.btn-1 .live-text {
+  margin-top: 318px;
 }
+
+.btn-1 img {
+  margin-top: 318px;
+}
+
+.btn-live {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .card-button img:nth-child(1) {
   width: 18px;
@@ -821,28 +887,46 @@ input:valid {
 .card-button img:nth-child(2) {
   width: 18px;
   height: 20px;
-}
+}  
 
 @media (min-width: 768px) {
-  #popup {
-    width: 100%;
-    height: 600px;
-    left: 0;
-    right: 0;
-    position: absolute;
+  #overlay {
+    background-color: #c1c7d0;
+    display: block;
+    mix-blend-mode: multiply;
+    position: fixed;
+    opacity: 70%;
     top: 0;
     bottom: 0;
-    background-color: #c1c7d0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    pointer-events: none;
+    overflow-y: auto;
   }
 
   .popupCont {
-    height: 882px;
-    width: 70%;
-    margin: 58px auto;
+    width: 1000px;
+    overflow-y: auto;
+    max-width: 80%;
+    position: fixed;
+    transition: 200ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
     padding-left: 20px;
     padding-right: 12px;
-    padding-top: 10px;
+    padding-top: 0;
+    z-index: 99;
     background-color: #fff;
+    height: 96vh;
+  }
+
+  #popup {
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    right: 0;
   }
 
   .btn-close {
@@ -1104,7 +1188,7 @@ input:valid {
   }
 
   .card {
-    max-width: 336px;
+    max-width: 329px;
     height: 474px;
     margin-left: 0;
   }
@@ -1121,12 +1205,16 @@ input:valid {
     margin-right: 13px;
     display: flex;
     flex-direction: column;
+    padding-top: 80px;
+    margin-bottom: 17.5px;
   }
 
   .resume {
     width: 100%;
     height: 240px;
-    margin: 69px auto;
+    margin-bottom: 69.5px;
+    margin-left: 60px;
+    margin-right: 60px;
     background-image: none;
   }
 
@@ -1277,6 +1365,7 @@ input:valid {
   .two ul {
     margin-top: 40px;
   }
+
 
   #popup-content {
     font-size: 32px;
