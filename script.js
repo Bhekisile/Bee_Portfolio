@@ -102,16 +102,23 @@ dataCards.forEach((card) => {
         </button>
   </div>
   </div>
+<<<<<<< HEAD
   <div class='active' id='overlay'></div>
   
+=======
+  <div id='overlay'></div>
+>>>>>>> 0f996e0c019c5a56b58af22e32fe539413a54503
   `;
   popup.append(temp);
 });
 const clicked = () => {
   popup.classList.remove('hidden');
   popup.classList.add('visible');
+<<<<<<< HEAD
   // overlay.classList.remove('hidden');
   overlay.classList.add('active');
+=======
+>>>>>>> 0f996e0c019c5a56b58af22e32fe539413a54503
 };
 popupBtnsArray.forEach((btn) => {
   btn.addEventListener('click', clicked);
@@ -128,3 +135,29 @@ for (let i = 0; i < popupConts.length; i += 1) {
     };
   }
 }
+
+// Form validation
+function formValidation() {
+  const name = document.form.name.value;
+  const error = document.getElementById('error');
+  const email = document.form.email.value;
+  const comment = document.form.comment.value;
+  const errorMessages = [];
+
+  if (name.trim() === '') {
+    errorMessages.push('Name is required');
+  } else if (email.trim() === '') {
+    errorMessages.push('Email is required');
+  } else if (email !== email.toLowerCase()) {
+    errorMessages.push('Email must be in lowercase');
+  } else if (comment.trim() === '') {
+    errorMessages.push('Message is required');
+  }
+  if (errorMessages.length > 0) {
+    error.textContent = errorMessages.join('.');
+    return false;
+  }
+  error.textContent = '';
+  return true;
+}
+formValidation();

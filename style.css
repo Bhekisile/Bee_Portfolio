@@ -817,19 +817,30 @@ input:valid {
 @media (min-width: 768px) {
   #overlay {
     background-color: #c1c7d0;
+<<<<<<< HEAD
     display: block;
     mix-blend-mode: multiply;
     position: fixed;
     opacity: 70%;
+=======
+    position: fixed;
+    opacity: 50%;
+>>>>>>> 0f996e0c019c5a56b58af22e32fe539413a54503
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100vw;
+<<<<<<< HEAD
     display: block;
     /* margin-left: -260px; */
     pointer-events: none;
     border: 1px solid red;
+=======
+    pointer-events: none;
+    visibility: visible;
+    overflow-y: auto;
+>>>>>>> 0f996e0c019c5a56b58af22e32fe539413a54503
   }
 
   .popupCont {
@@ -844,7 +855,12 @@ input:valid {
     padding-left: 20px;
     padding-right: 12px;
     z-index: 99;
+<<<<<<< HEAD
     background-color: #fff;
+=======
+    background-color: white;
+    height: 96vh;
+>>>>>>> 0f996e0c019c5a56b58af22e32fe539413a54503
   }
 
   .btn-close {
@@ -863,6 +879,7 @@ input:valid {
     width: 98%;
     text-align: center;
     max-height: 50%;
+<<<<<<< HEAD
     margin-bottom: 250px;
     margin-top: -10px;
   }
@@ -870,6 +887,20 @@ input:valid {
   .pop-img {
     width: 100%;
     height: 470px;
+=======
+    margin-bottom: 190px;
+    margin-top: -20px;
+  }
+
+  /* .pop-img {
+   width: 80%;
+   height: 50%;
+  } */
+
+  .pop-img {
+    width: 100%;
+    height: 400px;
+>>>>>>> 0f996e0c019c5a56b58af22e32fe539413a54503
   }
 
   .popupCont h3 {
@@ -897,7 +928,7 @@ input:valid {
     border-radius: 8px;
     width: 33%;
     float: right;
-    margin-top: -170px;
+    margin-top: -180px;
     margin-right: 16px;
   }
 
@@ -1225,11 +1256,18 @@ input:valid {
     padding: 0;
   }
 
-  #email-address {
+  #email {
     width: 96%;
   }
 
-  #full-name {
+  #error {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  #name {
     width: 96%;
   }
 
