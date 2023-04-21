@@ -74,7 +74,7 @@ const popupBtns = document.querySelectorAll('.pwin');
 const popupBtnsArray = Array.from(popupBtns);
 const popup = document.getElementById('popup');
 
-dataCards.forEach((card, i) => {
+dataCards.forEach((card) => {
   const temp = document.createElement('div');
   temp.innerHTML = `
   <div class='popupCont hidden'>
@@ -105,7 +105,6 @@ dataCards.forEach((card, i) => {
   popup.append(temp);
 });
 const overlay = document.getElementById('overlay');
-console.log('overlay', overlay);
 const clicked = () => {
   popup.classList.remove('hidden');
   popup.classList.add('visible');
@@ -115,22 +114,22 @@ popupBtnsArray.forEach((btn) => {
 });
 const popupConts = document.querySelectorAll('.popupCont');
 const closeBtns = document.querySelectorAll('.btn-close');
-for (let i = 0; i < popupConts.length; i+=1) {
-  for (let j = 0; j < popupBtns.length; j+=1) {
+for (let i = 0; i < popupConts.length; i += 1) {
+  for (let j = 0; j < popupBtns.length; j += 1) {
     popupBtns[i].onclick = function openPopup() {
       overlay.style.visibility = 'visible';
       popupConts[i].style.visibility = 'visible';
-      popupConts[i].classList.remove('hidden')
-      popupConts[i].classList.add('visible')
+      popupConts[i].classList.remove('hidden');
+      popupConts[i].classList.add('visible');
     };
     closeBtns[i].onclick = function closePopup() {
       popupConts[i].style.visibility = 'hidden';
-      popupConts[i].classList.remove('visible')
-      popupConts[i].classList.add('hidden')
+      popupConts[i].classList.remove('visible');
+      popupConts[i].classList.add('hidden');
       overlay.style.visibility = 'hidden';
     };
-  };
-};
+  }
+}
 
 // Form validation
 function formValidation() {

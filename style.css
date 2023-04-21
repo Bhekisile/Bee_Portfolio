@@ -641,15 +641,10 @@ input:valid {
   justify-content: space-between;
 }
 
-/* .btn-live a {
-  text-decoration: none;
-  display: flex;
-} */
-
 .btn-source {
   width: 156px;
   font-size: 15px;
-  text-decoration: none; 
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   font-weight: 500;
@@ -860,18 +855,12 @@ input:valid {
 }
 
 .btn-1 .live-text {
-  margin-top: 318px;
+  margin-top: 0;
 }
 
 .btn-1 img {
-  margin-top: 318px;
+  margin-top: 0;
 }
-
-.btn-live {
-  display: flex;
-  justify-content: space-between;
-}
-
 
 .card-button img:nth-child(1) {
   width: 18px;
@@ -887,7 +876,7 @@ input:valid {
 .card-button img:nth-child(2) {
   width: 18px;
   height: 20px;
-}  
+}
 
 @media (min-width: 768px) {
   #overlay {
@@ -1366,7 +1355,6 @@ input:valid {
     margin-top: 40px;
   }
 
-
   #popup-content {
     font-size: 32px;
     font-weight: 600;
@@ -1380,7 +1368,7 @@ input:valid {
 
   .btn-live {
     margin-right: 178px;
-    margin-bottom: 317px;
+    margin-bottom: 4px;
   }
 
   #pop-x {
