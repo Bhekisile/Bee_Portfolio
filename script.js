@@ -100,17 +100,14 @@ dataCards.forEach((card) => {
           </a>
         </button>
   </div>
-  <div id='overlay'></div>
   </div>
+  <div id='overlay'></div>
   `;
   popup.append(temp);
 });
 const clicked = () => {
   popup.classList.remove('hidden');
   popup.classList.add('visible');
-
-  overlay.classList.remove('hidden');
-  overlay.classList.add('visible');
 
 };
 popupBtnsArray.forEach((btn) => {

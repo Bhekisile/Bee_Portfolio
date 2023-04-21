@@ -817,8 +817,6 @@ input:valid {
 @media (min-width: 768px) {
   #overlay {
     background-color: #c1c7d0;
-    backface-visibility: hidden;
-    mix-blend-mode: multiply;
     position: fixed;
     opacity: 50%;
     top: 0px;
@@ -826,8 +824,9 @@ input:valid {
     left: 0;
     right: 0;
     width: 100vw;
-    margin-left: -260px;
     pointer-events: none;
+    visibility: visible;
+    overflow-y: auto;
   }
 
   .popupCont {
@@ -836,13 +835,13 @@ input:valid {
     position: fixed;
     transition: 200ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
-    transition: 200ms ease-in-out;
     top: 50%;
     left: 50%;
     padding-left: 20px;
     padding-right: 12px;
     z-index: 99;
     background-color: white;
+    height: 96vh;
   }
 
   .btn-close {
@@ -861,13 +860,18 @@ input:valid {
     width: 98%;
     text-align: center;
     max-height: 50%;
-    margin-bottom: 280px;
+    margin-bottom: 190px;
     margin-top: -20px;
   }
 
-  .pop-img {
+  /* .pop-img {
    width: 80%;
    height: 50%;
+  } */
+
+  .pop-img {
+    width: 100%;
+    height: 400px;
   }
 
   .popupCont h3 {
@@ -895,7 +899,7 @@ input:valid {
     border-radius: 8px;
     width: 33%;
     float: right;
-    margin-top: -170px;
+    margin-top: -180px;
     margin-right: 16px;
   }
 
@@ -1313,8 +1317,5 @@ input:valid {
     filter: grayscale(50%);
   }
 
-  .pop-img {
-    width: 100%;
-    height: 500px;
-  }
+ 
 }
