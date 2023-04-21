@@ -73,6 +73,7 @@ const dataCards = [
 const popupBtns = document.querySelectorAll('.pwin');
 const popupBtnsArray = Array.from(popupBtns);
 const popup = document.getElementById('popup');
+const overlay = document.getElementById('overlay');
 
 dataCards.forEach((card) => {
   const temp = document.createElement('div');
@@ -100,16 +101,17 @@ dataCards.forEach((card) => {
           </a>
         </button>
   </div>
-  <div id='overlay'></div>
   </div>
+  <div class='active' id='overlay'></div>
+  
   `;
   popup.append(temp);
 });
 const clicked = () => {
   popup.classList.remove('hidden');
   popup.classList.add('visible');
-  overlay.classList.remove('hidden');
-  overlay.classList.add('visible');
+  // overlay.classList.remove('hidden');
+  overlay.classList.add('active');
 };
 popupBtnsArray.forEach((btn) => {
   btn.addEventListener('click', clicked);
