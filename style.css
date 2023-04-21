@@ -641,10 +641,15 @@ input:valid {
   justify-content: space-between;
 }
 
+/* .btn-live a {
+  text-decoration: none;
+  display: flex;
+} */
+
 .btn-source {
   width: 156px;
   font-size: 15px;
-  text-decoration: none;
+  text-decoration: none; 
   display: flex;
   justify-content: space-between;
   font-weight: 500;
@@ -740,7 +745,7 @@ input:valid {
   border: none;
   margin-top: 9px;
   margin-left: 267px;
-  color: #67798e;
+  color: #fff;
   position: absolute;
   background: none;
 }
@@ -829,8 +834,35 @@ input:valid {
   gap: 10px;
 }
 
+.card-button .btn-1 {
+  width: 135px;
+  height: 48px;
+  display: flex;
+  margin-top: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-1 .live-text {
+  margin-top: 3px !important;
+  height: fit-content;
+  width: 67px;
+  height: 24px;
+  color: #fff;
+}
+
+.btn-live img {
+  margin-top: 3px;
+  margin: 0;
+  padding: 0;
+}
+
+a .btn-live {
+  width: 104px;
+  height: 48px;
+}
+
 .card-button button {
-  max-width: 155px;
   height: 48px;
   background-color: #36b37f;
   padding-left: 15px;
@@ -855,12 +887,18 @@ input:valid {
 }
 
 .btn-1 .live-text {
-  margin-top: 0;
+  margin-top: 318px;
 }
 
 .btn-1 img {
-  margin-top: 0;
+  margin-top: 318px;
 }
+
+.btn-live {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .card-button img:nth-child(1) {
   width: 18px;
@@ -876,7 +914,7 @@ input:valid {
 .card-button img:nth-child(2) {
   width: 18px;
   height: 20px;
-}
+}  
 
 @media (min-width: 768px) {
   #overlay {
@@ -933,7 +971,7 @@ input:valid {
     display: block;
     width: 98%;
     text-align: center;
-    min-width: 768px;
+    width: 98%;
     height: 500px;
   }
 
@@ -956,10 +994,49 @@ input:valid {
 
   .card-button {
     border-radius: 8px;
-    width: 33%;
+    width: 270px;
     float: right;
     margin-top: -290px;
     margin-right: 16px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-button .btn-1 {
+    width: 115px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-1 .live-text {
+    text-align: left;
+  }
+
+  .btn-1 img {
+    margin-right: 24px;
+  }
+
+  .card-button .btn-2 {
+    width: 139px;
+    height: 48px;
+  }
+
+  .btn-1 .live-text {
+    font-size: 15px;
+    margin-top: 155px;
+  }
+
+  .btn-1 img {
+    margin-top: 155px;
+    import
+    
+  }
+
+  span .live-tax {
+    /* color: red; */
+    width: 67px;
+    height: 24px;
   }
 
   .flex-icons li {
@@ -1368,7 +1445,7 @@ input:valid {
 
   .btn-live {
     margin-right: 178px;
-    margin-bottom: 4px;
+    margin-bottom: 317px;
   }
 
   #pop-x {
