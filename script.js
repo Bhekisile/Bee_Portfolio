@@ -11,7 +11,8 @@ const getHam = document.querySelector('.getHam');
 getHam.addEventListener('click', clickMenu);
 
 const x = document.querySelector('#x');
-x.addEventListener('click', clickX);
+// Error 1
+x.addEventListener(click', clickX);
 
 const dataCards = [
   {
@@ -39,7 +40,8 @@ const dataCards = [
     techStack: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     linkLiveVersion: 'https://www.google.com',
-    linkSource: 'https://github.com/bhekisile/',
+    // Error 2
+    linkSource 'https://github.com/bhekisile/',
   },
   {
     id: 4,
@@ -75,7 +77,8 @@ const popupBtnsArray = Array.from(popupBtns);
 const popup = document.getElementById('popup');
 
 dataCards.forEach((card, i) => {
-  const temp = document.createElement('div');
+  // Error 3
+  const temp = document.createElement('div')
   temp.innerHTML = `
   <div class='popupCont hidden'>
   <button class='btn-close'>&times;</button>
