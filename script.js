@@ -152,3 +152,36 @@ function formValidation() {
 formValidation();
 
 // Local Storage
+let inputData = {};
+if (localStorage.savedForm) {
+  inputData = JSON.parse(localStorage.getItem('savedForm'));
+}
+const userDataInput = () => {
+  if (inputData.name) {
+    name.value = inputData.name;
+  }
+  if (inputData.email) {
+    email.value = inputData.email;
+  }
+  if (inputData.comment) {
+    comment.value = inputData.comment;
+  }
+};
+
+const populateFields = () => {
+  localStorage.setItem('savedForm', JSON.stringify(inputData));
+  userDataInput();
+};
+form.onchange = populateFields();
+
+name.addEventListener('change', () => {
+  inputData.name = name.value;
+});
+
+email.addEventListener('change', () => {
+  inputData.email = email.value;
+});
+
+message.addEventListener('change', () => {
+  inputData.message = message.value;
+});
