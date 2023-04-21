@@ -102,23 +102,16 @@ dataCards.forEach((card) => {
         </button>
   </div>
   </div>
-<<<<<<< HEAD
   <div class='active' id='overlay'></div>
   
-=======
-  <div id='overlay'></div>
->>>>>>> 0f996e0c019c5a56b58af22e32fe539413a54503
   `;
   popup.append(temp);
 });
 const clicked = () => {
   popup.classList.remove('hidden');
   popup.classList.add('visible');
-<<<<<<< HEAD
   // overlay.classList.remove('hidden');
   overlay.classList.add('active');
-=======
->>>>>>> 0f996e0c019c5a56b58af22e32fe539413a54503
 };
 popupBtnsArray.forEach((btn) => {
   btn.addEventListener('click', clicked);
