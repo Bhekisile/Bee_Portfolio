@@ -77,7 +77,7 @@ const popup = document.getElementById('popup');
 dataCards.forEach((card) => {
   const temp = document.createElement('div');
   temp.innerHTML = `
-  
+  <div id='overlay'>
   <div class='popupCont'>
   <button class='btn-close'>&times;</button>
   <div class='img1'><img class='pop-img' src=${card.image}></div>
@@ -100,7 +100,7 @@ dataCards.forEach((card) => {
           </a>
         </button>
   </div>
-  <div id='overlay'></div>
+  </div>
   </div>
   `;
   popup.append(temp);
@@ -150,3 +150,41 @@ function formValidation() {
   return true;
 }
 formValidation();
+
+// Local Storage
+const email = document.form.email.value;
+const name = document.form.name.value;
+const comment = document.form.comment.value;
+let inputData = {};
+if (localStorage.savedForm) {
+  inputData = JSON.parse(localStorage.getItem('savedForm'));
+}
+const userDataInput = () => {
+  if (inputData.name) {
+    name.value = inputData.name;
+  }
+  if (inputData.email) {
+    email.value = inputData.email;
+  }
+  if (inputData.comment) {
+    comment.value = inputData.comment;
+  }
+};
+
+const populateFields = () => {
+  localStorage.setItem('savedForm', JSON.stringify(inputData));
+  userDataInput();
+};
+form.onchange = populateFields();
+
+name.addEventListener('change', () => {
+  inputData.name = name.value;
+});
+
+email.addEventListener('change', () => {
+  inputData.email = email.value;
+});
+
+message.addEventListener('change', () => {
+  inputData.message = message.value;
+});
