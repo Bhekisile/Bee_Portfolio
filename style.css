@@ -929,7 +929,7 @@ a .btn-live {
     left: 50%;
     padding-left: 20px;
     padding-right: 12px;
-    padding-top: 0;
+    padding-top: 12px;
     z-index: 99;
     background-color: #fff;
     height: 96vh;
@@ -997,7 +997,7 @@ a .btn-live {
 
   .btn-1 .live-text {
     text-align: left;
-    margin-top: 318px 12px !important;
+    margin-top: 318px !important;
     width: 67px;
     height: 24px;
     font-size: 15px;
@@ -1008,6 +1008,14 @@ a .btn-live {
     margin-top: 318px;
     text-align: right;
   }
+
+  .card-button img:nth-child(2) {
+    padding-left: 0;
+  }
+
+  /* .btn-2 img {
+    padding-left: 0;
+  } */
 
   .card-button .btn-1 {
     margin-right: 0 !important;
