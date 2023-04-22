@@ -1009,13 +1009,17 @@ a .btn-live {
     text-align: right;
   }
 
+  .nav img {
+    display: none;
+  }
+
+  .btn-2 img {
+    padding-left: 10px;
+  }
+
   .card-button img:nth-child(2) {
     padding-left: 0;
   }
-
-  /* .btn-2 img {
-    padding-left: 0;
-  } */
 
   .card-button .btn-1 {
     margin-right: 0 !important;
@@ -1029,10 +1033,6 @@ a .btn-live {
   .btn-2 .live-text {
     color: #fff;
     text-decoration: none;
-  }
-
-  .btn-2 img {
-    padding-left: 10px;
   }
 
   .flex-icons li {
@@ -1105,10 +1105,6 @@ a .btn-live {
 
   * {
     box-sizing: border-box;
-  }
-
-  .nav img {
-    display: none;
   }
 
   .desk {
