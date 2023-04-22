@@ -77,8 +77,7 @@ const popup = document.getElementById('popup');
 dataCards.forEach((card) => {
   const temp = document.createElement('div');
   temp.innerHTML = `
-  
-  <div class='popupCont'>
+  <div class='popupCont hidden'>
   <button class='btn-close'>&times;</button>
   <div class='img1'><img class='pop-img' src=${card.image}></div>
   <h3>${card.heading}</h3>
@@ -87,24 +86,25 @@ dataCards.forEach((card) => {
   </ul>
   <div class='text'>${card.description}</div>
   <div class="card-button">
-        <button class='btn-1>
+        <button class='btn-1'>
           <a href=${card.linkLiveVersion} class="btn-live">
             <span class='live-text'>See live</span>
             <img src="./ImageP1/live-icon.png" alt="see live icon">
           </a>
         </button>
-        <button class='btn-2>
+        <button class='btn-2'>
           <a href=${card.linkSource} class="btn-source">
             <span class='live-text'>See source</span>
             <img src="./ImageP1/github-w.png" alt="see github icon">
           </a>
         </button>
   </div>
-  <div id='overlay'></div>
   </div>
+  <div class='active' id='overlay'></div>
   `;
   popup.append(temp);
 });
+const overlay = document.getElementById('overlay');
 const clicked = () => {
   popup.classList.remove('hidden');
   popup.classList.add('visible');
@@ -117,10 +117,16 @@ const closeBtns = document.querySelectorAll('.btn-close');
 for (let i = 0; i < popupConts.length; i += 1) {
   for (let j = 0; j < popupBtns.length; j += 1) {
     popupBtns[i].onclick = function openPopup() {
+      overlay.style.visibility = 'visible';
       popupConts[i].style.visibility = 'visible';
+      popupConts[i].classList.remove('hidden');
+      popupConts[i].classList.add('visible');
     };
     closeBtns[i].onclick = function closePopup() {
       popupConts[i].style.visibility = 'hidden';
+      popupConts[i].classList.remove('visible');
+      popupConts[i].classList.add('hidden');
+      overlay.style.visibility = 'hidden';
     };
   }
 }
