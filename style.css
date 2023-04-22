@@ -836,19 +836,25 @@ input:valid {
   margin-top: 0;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
+  margin-right: 0 !important;
+}
+
+.btn-2 .live-text {
+  text-decoration: none;
+  color: #fff;
 }
 
 .btn-1 .live-text {
   margin-top: 3px !important;
-  height: fit-content;
   width: 67px;
   height: 24px;
   color: #fff;
+  font: 16px;
 }
 
 .btn-live img {
   margin-top: 3px;
-  margin: 0;
   padding: 0;
 }
 
@@ -875,16 +881,6 @@ a .btn-live {
   align-items: center;
 }
 
-.live-text {
-  width: 86px;
-  height: 24px;
-  color: white;
-}
-
-.btn-1 .live-text {
-  margin-top: 3px;
-}
-
 .btn-1 img {
   margin-top: 3px;
 }
@@ -903,6 +899,7 @@ a .btn-live {
 .card-button img:nth-child(2) {
   width: 18px;
   height: 20px;
+  padding-left: 15px;
 }
 
 @media (min-width: 768px) {
@@ -960,7 +957,6 @@ a .btn-live {
     display: block;
     width: 98%;
     text-align: center;
-    width: 98%;
     height: 500px;
   }
 
@@ -983,7 +979,7 @@ a .btn-live {
 
   .card-button {
     border-radius: 8px;
-    width: 270px;
+    width: 290px;
     float: right;
     margin-top: -290px;
     margin-right: 16px;
@@ -991,22 +987,20 @@ a .btn-live {
     flex-wrap: wrap;
   }
 
-    a .btn-1 {
+  a .btn-1 {
     width: 115px;
     height: 48px;
     display: grid;
     justify-content: space-between;
     gap: 8px;
-    border: 1px solid red;
   }
 
-  span .live-text {
+  .btn-1 .live-text {
     text-align: left;
-    margin-top: 318px;
-    margin-bottom: 313px;
-    float: 0;
-    margin: 0;
-    padding: 0;
+    margin-top: 318px 12px !important;
+    width: 67px;
+    height: 24px;
+    font-size: 15px;
   }
 
   .btn-1 img {
@@ -1015,32 +1009,22 @@ a .btn-live {
     text-align: right;
   }
 
+  .card-button .btn-1 {
+    margin-right: 0 !important;
+  }
+
   .card-button .btn-2 {
     width: 139px;
     height: 48px;
   }
 
-  .btn-1 .live-text {
-    font-size: 15px;
-    margin-top: 155px;
+  .btn-2 .live-text {
+    color: #fff;
+    text-decoration: none;
   }
 
-  .btn-1 img {
-    margin-top: 155px;
-  }
-
-  span .live-text {
-    width: 67px;
-    height: 24px;
-    margin-right: 12px;
-  }
-
-  .btn-1 .live-text {
-    margin-top: 318px;
-  }
-
-  .btn-1 img {
-    margin-top: 318px;
+  .btn-2 img {
+    padding-left: 10px;
   }
 
   .flex-icons li {
