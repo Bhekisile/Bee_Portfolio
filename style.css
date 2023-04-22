@@ -991,19 +991,28 @@ a .btn-live {
     flex-wrap: wrap;
   }
 
-  .card-button .btn-1 {
+    a .btn-1 {
     width: 115px;
     height: 48px;
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    gap: 8px;
+    border: 1px solid red;
   }
 
-  .btn-1 .live-text {
+  span .live-text {
     text-align: left;
+    margin-top: 318px;
+    margin-bottom: 313px;
+    float: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .btn-1 img {
-    margin-right: 24px;
+    margin-right: 12px;
+    margin-top: 318px;
+    text-align: right;
   }
 
   .card-button .btn-2 {
@@ -1018,14 +1027,12 @@ a .btn-live {
 
   .btn-1 img {
     margin-top: 155px;
-    import
-    
   }
 
   span .live-tax {
-    /* color: red; */
     width: 67px;
     height: 24px;
+    margin-right: 12px;
   }
 
   .btn-1 .live-text {
