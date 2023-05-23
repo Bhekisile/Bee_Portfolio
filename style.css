@@ -1163,14 +1163,12 @@ a .btn-live {
 
   .background-container {
     height: 650px;
-    /* overflow-y: hidden !important; */
     background-image: url(./ImageP1/Header-llustration-desktop-1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-top: -62.55px;
     margin-left: 27px;
     margin-bottom: 122px;
-    /* background-position: fixed; */
   }
 
   ::-webkit-scrollbar {
