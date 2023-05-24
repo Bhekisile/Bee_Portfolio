@@ -1093,7 +1093,8 @@ a .btn-live {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: url(./ImageP1/bottom-right-background-resized.png),
+    background-image:
+      url(./ImageP1/bottom-right-background-resized.png),
       url(./ImageP1/bottom-left-background-resized.png),
       url(./ImageP1/bottom-background-resized.png),
       url(./ImageP1/desk-right-background-resized.png);
