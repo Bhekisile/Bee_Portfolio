@@ -1252,7 +1252,9 @@ a .btn-live {
   }
 
   .card-img {
-    max-width: auto;
+    width: 325px;
+    object-fit: contain;
+    height: 220px;
   }
 
   .about-me {
