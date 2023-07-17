@@ -38,8 +38,8 @@ const dataCards = [
     heading: 'To Do List',
     techStack: ['HTML', 'GitHub', 'JavaScript', 'Webpack'],
     description: 'To-do-list is a list of tasks that need to be completed. The user can add, edit, and delete the task and each task is rendered dynamically on page load. The project uses webpack to bundle JavaScript files.',
-    linkLiveVersion: 'https://bhekisile.github.io/ToDo-list/',
-    linkSource: 'https://github.com/bhekisile/ToDo-list',
+    linkLiveVersion: 'https://bhekisile.github.io/To-do-list/dist/',
+    linkSource: 'https://github.com/Bhekisile/To-do-list',
   },
   {
     id: 4,
@@ -65,13 +65,14 @@ const dataCards = [
     heading: 'To Do List',
     techStack: ['HTML', 'GitHub', 'JavaScript', 'Webpack'],
     description: 'To-do-list is a list of tasks that need to be completed. The user can add, edit, and delete the task and each task is rendered dynamically on page load. The project uses webpack to bundle JavaScript files.',
-    linkLiveVersion: 'https://bhekisile.github.io/ToDo-list/',
-    linkSource: 'https://github.com/bhekisile/',
+    linkLiveVersion: 'https://bhekisile.github.io/To-do-list/dist/',
+    linkSource: 'https://github.com/Bhekisile/To-do-list',
   },
 ];
 
 const popupBtns = document.querySelectorAll('.pwin');
 const popupBtnsArray = Array.from(popupBtns);
+console.log('popupBtns', popupBtns);
 const popup = document.getElementById('popup');
 
 dataCards.forEach((card) => {
