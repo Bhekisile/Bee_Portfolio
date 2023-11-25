@@ -61,12 +61,12 @@ const dataCards = [
   },
   {
     id: 6,
-    image: './ImageP1/todo.png',
-    heading: 'To Do List',
-    techStack: ['HTML', 'GitHub', 'JavaScript', 'Webpack'],
-    description: 'To-do-list is a list of tasks that need to be completed. The user can add, edit, and delete the task and each task is rendered dynamically on page load. The project uses webpack to bundle JavaScript files.',
-    linkLiveVersion: 'https://bhekisile.github.io/To-do-list/dist/',
-    linkSource: 'https://github.com/Bhekisile/To-do-list',
+    image: './ImageP1/metrics.png',
+    heading: 'Stock Screener',
+    techStack: ['JavaScript', 'React',  'Redux', 'CSS'],
+    description: 'This is a metric website containing data or parameters used for stock screening. It displays a list of companies from all over the world with the corresponding parameters and values. The user can filter the application by company\'s name. It is more beneficial to those who search for stocks. The data is extracted from the Financial Modeling Prep API.',
+    linkLiveVersion: 'https://stock-screener-7lyx.onrender.com',
+    linkSource: 'https://github.com/Bhekisile/Metrics-webapp',
   },
 ];
 
