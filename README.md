@@ -23,7 +23,7 @@
 # 📖 [Bee Portfolio] <a name="about-project"></a>
 
 
-**[Bee Portfolio]** is a personal portfolio website. It is a responsive website consists of both mobile and desktop version. The template is taken from Figma Design. 
+**[Bee Portfolio]** is my personal portfolio website. It is responsive and user-friendly and consists of three sections: my works, about me, and contact. The social button links can take you to the corresponding sites. Formspree is used to handle form processing and storage. The template is taken from Figma Design. 
 
 ## 🛠 Built With <a name="built-with"></a>
 

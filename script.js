@@ -157,3 +157,56 @@ function formValidation() {
   return true;
 }
 formValidation();
+
+// Local Storage
+const formContainer = document.getElementById('detailsForm');
+const email = document.getElementById('email'); // Assuming your input has this id
+const name = document.getElementById('name'); // Assuming your input has this id
+const comment = document.getElementById('comment'); // Assuming your input has this id
+
+let inputData = {};
+
+// Load data from localStorage if it exists
+if (localStorage.getItem('savedForm')) {
+  inputData = JSON.parse(localStorage.getItem('savedForm'));
+}
+
+// Populate the form fields with saved data
+const userDataInput = () => {
+  if (inputData.name) {
+    name.value = inputData.name;
+  }
+  if (inputData.email) {
+    email.value = inputData.email;
+  }
+  if (inputData.comment) {
+    comment.value = inputData.comment;
+  }
+};
+
+// Save the form fields to localStorage and populate the fields
+const populateFields = () => {
+  localStorage.setItem('savedForm', JSON.stringify(inputData));
+  userDataInput();
+};
+
+// Call userDataInput to fill fields on page load
+userDataInput();
+
+// Update inputData and save on change
+name.addEventListener('change', () => {
+  inputData.name = name.value;
+  populateFields();
+});
+
+email.addEventListener('change', () => {
+  inputData.email = email.value;
+  populateFields();
+});
+
+comment.addEventListener('change', () => {
+  inputData.comment = comment.value;
+  populateFields();
+});
+
+formContainer.onchange = populateFields;
