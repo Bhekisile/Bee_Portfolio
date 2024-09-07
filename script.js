@@ -63,7 +63,7 @@ const dataCards = [
     id: 6,
     image: './ImageP1/metrics.png',
     heading: 'Stock Screener',
-    techStack: ['JavaScript', 'React',  'Redux', 'CSS'],
+    techStack: ['JavaScript', 'React', 'Redux', 'CSS'],
     description: 'This is a metric website containing data or parameters used for stock screening. It displays a list of companies from all over the world with the corresponding parameters and values. The user can filter the application by company\'s name. It is more beneficial to those who search for stocks. The data is extracted from the Financial Modeling Prep API.',
     linkLiveVersion: 'https://stock-screener-7lyx.onrender.com',
     linkSource: 'https://github.com/Bhekisile/Metrics-webapp',
@@ -72,7 +72,7 @@ const dataCards = [
 
 const popupBtns = document.querySelectorAll('.pwin');
 const popupBtnsArray = Array.from(popupBtns);
-console.log('popupBtns', popupBtns);
+// console.log('popupBtns', popupBtns);
 const popup = document.getElementById('popup');
 
 dataCards.forEach((card) => {
