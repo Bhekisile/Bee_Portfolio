@@ -1,5 +1,3 @@
-
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -42,6 +40,14 @@
 - **[Full responsive]**
 - **[Interactive buttons]**
 - **[Navigational menu]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://bhekisile.github.io/Bee_Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
